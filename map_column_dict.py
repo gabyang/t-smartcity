@@ -17,7 +17,7 @@ column_mapping = {
     '1 ROOM': {'name': '1-Room Housing Units', 'description': 'The total number of 1-room housing units available in each planning area.'},
     'T-143/Total': {
         'name': 'Total Working Residents by Industry',
-        'description': 'Total number of working residents aged 15 and over categorized by industry in each planning area.'
+        'description': 'Total number of working residents aged 15 and over categorized by industry in each planning area by the thousands.'
     },
     'T-143/Manufacturing': {
         'name': 'Residents in Manufacturing Industry',
