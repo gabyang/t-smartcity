@@ -4,6 +4,8 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import geopandas as gpd
+from map_column_dict import column_mapping
+
 
 # ----- PAGE CONFIG & STYLES -----
 st.set_page_config(
@@ -189,6 +191,12 @@ def map_visualization_page():
             gdf = gpd.read_file("data/gdf.geojson")
             gdf['longitude'] = gdf.geometry.centroid.x
             gdf['latitude'] = gdf.geometry.centroid.y
+
+
+            # Rename columns based on column_mapping
+            # rename_dict = {col: column_mapping[col]['name'] for col in gdf.columns if col in column_mapping}
+            # gdf_renamed = gdf.rename(columns=rename_dict, inplace=False)
+
             return gdf
         
         gdf = load_data()
@@ -200,15 +208,22 @@ def map_visualization_page():
         # numeric_columns = numeric_columns.drop(["longitude", "latitude"])
 
         filter_option = st.selectbox("Select Filter", numeric_columns, index=0)
-        st.write(f"**Displaying {filter_option} on the map:**")
+        selected_column = filter_option
+        selected_column_name = column_mapping[selected_column]['name']
+        selected_column_desc = column_mapping[selected_column]['description']
+
+        
+
         # Map style selection
         map_style = st.sidebar.selectbox(
             "Select Map Style",
             options=["carto-positron", "carto-darkmatter", "open-street-map"]
         )
 
-        selected_column = filter_option
-
+        
+        # st.markdown(f"Display Name: **{selected_column}**")
+        # st.markdown(f"### Data: **{selected_column_name}**")
+        st.markdown(f"#### Description: *{selected_column_desc}*")
         fig = px.choropleth_mapbox(
             gdf,
             geojson=geojson_data,
@@ -216,7 +231,7 @@ def map_visualization_page():
             color=selected_column,
             hover_name="Name",
             hover_data=["PLN_AREA_N", "REGION_N", selected_column],
-            title=f"{selected_column} Data by Location",
+            title=f"{selected_column_name} Heatmap Data by Location",
             mapbox_style=map_style,
             center={"lat": gdf.geometry.centroid.y.mean(), "lon": gdf.geometry.centroid.x.mean()},
         )
@@ -233,7 +248,7 @@ def map_visualization_page():
             color=selected_column,
             hover_name="Name",
             hover_data=["PLN_AREA_N", "REGION_N"],
-            title=f"{selected_column} Data by Location",
+            title=f"{selected_column_name} Scatter Plot Data by Location",
             mapbox_style=map_style,
         )
         # Display the map
