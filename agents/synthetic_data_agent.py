@@ -1,7 +1,11 @@
-from openai import OpenAI
-
-client = OpenAI()
+import openai
 import re
+import subprocess
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 def parse_query(user_query: str):
@@ -133,18 +137,64 @@ def build_code_generation_prompt(location: str, locale: str, columns: list):
     return prompt.strip()
 
 
+def run_synthetic_data_code(code_output: str) -> bytes:
+    """
+    1. Write the generated code to a temporary script.
+    2. Run that script to produce 'synthetic_data.csv'.
+    3. Return the CSV file content as bytes.
+    """
+
+    # Write the code to a temporary file
+    with open("generated_script.py", "w", encoding="utf-8") as f:
+        f.write(code_output)
+    # Execute the generated script
+    subprocess.run(["python", "generated_script.py"])
+    # Read the CSV file in binary
+    with open("synthetic_data.csv", "rb") as csv_file:
+        csv_data = csv_file.read()
+    return csv_data
+
+def remove_backticks(code_with_backticks):
+    """
+    Remove Markdown-style triple backticks from a given string.
+
+    Args:
+        code_with_backticks (str): The input string containing the code block.
+
+    Returns:
+        str: The cleaned code string without backticks.
+    """
+    # Check for triple backticks and remove them
+    if code_with_backticks.startswith("```") and code_with_backticks.endswith("```"):
+        # Remove the first and last triple backticks
+        code_with_backticks = code_with_backticks.strip('`')
+        code_with_backticks = code_with_backticks.split('\n', 1)[-1].rsplit('\n', 1)[0]
+
+    return code_with_backticks
+
+
 def generate_synthetic_data_code(user_query: str) -> str:
     location, data_type, purpose = parse_query(user_query)
     locale = get_locale_for_location(location)
     columns = suggest_columns_for_data_type(data_type)
     prompt_for_code = build_code_generation_prompt(location, locale, columns)
 
-    response = client.completions.create(
-        model="text-davinci-003",  # or whichever model you prefer
-        prompt=prompt_for_code,
+    response = openai.chat.completions.create(
+        model="gpt-4o",
+        messages=[
+            {
+                "role": "system",
+                "content": "You are a helpful assistant that generates Python code.",
+            },
+            {"role": "user", "content": prompt_for_code},
+        ],
         max_tokens=700,
         temperature=0.2,
     )
 
-    code_output = response.choices[0].text.strip()
-    return code_output
+
+    code_output = response.choices[0].message.content.strip()
+    print("before csv file")
+    csv_data = run_synthetic_data_code(remove_backticks(code_output))
+    print("after csv file")
+    return csv_data

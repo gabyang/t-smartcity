@@ -6,7 +6,10 @@ import plotly.express as px
 import geopandas as gpd
 from map_column_dict import column_mapping
 from agents.synthetic_data_agent import generate_synthetic_data_code
-
+from agents.comparative_analysis_agent import generate_comparative_analysis
+from agents.insight_report_agent import generate_insight_report
+from bs4 import BeautifulSoup
+from io import BytesIO
 
 # ----- PAGE CONFIG & STYLES -----
 st.set_page_config(
@@ -163,14 +166,23 @@ def query_ai_agent_page():
     )
     user_query = st.text_input(
         "What would you like to find out?",
-        value="What are the key transportation challenges the city is facing?",
+        value="What is the distribution of green spaces in Singapore across different planning areas?",
     )
 
     if st.button("Get Insight Report"):
-        st.markdown("### Insight Report")
+        #st.markdown("### Insight Report")
         # Placeholder text
-        st.write("Here is where your AI-generated insight report would appear.")
+        insight_report = generate_insight_report(user_query)
+        st.write(insight_report)
         # Optionally display some “calls” or “steps” if you want to mimic an agent’s chain-of-thought (in a user-friendly format).
+
+        report_bytes = BytesIO(insight_report.encode('utf-8'))
+        st.download_button(
+            label="Download Insight Report",
+            data=report_bytes,
+            file_name="insight_report.txt",
+            mime="text/plain"
+        )
 
 
 def map_visualization_page():
@@ -189,10 +201,8 @@ def map_visualization_page():
     # select only the columns that are after Multigenerational housing
     mapping_df = mapping_df.iloc[9:]
     # Create a toggleable section for documentation
-    with st.expander("Documentation for the columns"):
+    with st.expander("See Column Specifications"):
         st.write(mapping_df)
-
-    
 
     try:
 
@@ -208,15 +218,60 @@ def map_visualization_page():
             # gdf_renamed = gdf.rename(columns=rename_dict, inplace=False)
 
             return gdf
+        
+        
+        def parse_description(description):
+            soup = BeautifulSoup(description, 'html.parser')
+            data = {}
+            
+            # Find all table rows within the table
+            for row in soup.find_all('tr'):
+                # Find all cells in the row
+                cells = row.find_all(['th', 'td'])  # Include both th and td
+                if len(cells) == 2:  # Ensure the row has exactly 2 cells
+                    key = cells[0].text.strip()  # First cell is the key
+                    value = cells[1].text.strip()  # Second cell is the value
+                    data[key] = value
+            
+            return data
 
-        gdf = load_data()
+        @st.cache_data
+        def load_dwellings_data():
+            dwellings = gpd.read_file("data/dwellings.geojson")
+            # Apply the parsing function to the 'Description' column
+            dwellings_data = dwellings['Description'].apply(parse_description)
 
-        # Convert GeoDataFrame to GeoJSON for choropleth
-        geojson_data = gdf.__geo_interface__
+            # Convert the parsed data to a DataFrame and concatenate with the original GeoDataFrame
+            dwellings_df = pd.DataFrame(dwellings_data.tolist())
+            dwellings["latitude"] = dwellings.geometry.centroid.y
+            dwellings["longitude"] = dwellings.geometry.centroid.x
+            dwellings = pd.concat([dwellings, dwellings_df], axis=1)
+            dwellings = dwellings.drop(columns=['Description'])
+            return dwellings[:10000]
+        
+        @st.cache_data
+        def load_supermarkets_data():
+            supermarkets = gpd.read_file("data/SupermarketsGEOJSON.geojson")
+
+            # Apply the parsing function to the 'Description' column
+            supermarkets_data = supermarkets['Description'].apply(parse_description)
+
+            
+
+            supermarkets_df = pd.DataFrame(supermarkets_data.tolist())
+            supermarkets = pd.concat([supermarkets, supermarkets_df], axis=1)
+            supermarkets = supermarkets.drop(columns=['Description'])
+            return supermarkets
+
+        with st.spinner("Loading data..."):
+            gdf = load_data()
+            dwellings = load_dwellings_data()
+            supermarkets = load_supermarkets_data()
+            geojson_data = gdf.__geo_interface__
 
         numeric_columns = gdf.select_dtypes(include=[np.number]).columns
-        # numeric_columns = numeric_columns.drop(["longitude", "latitude"])
-        filter_option = st.selectbox("Select Filter", numeric_columns, index=0)
+        numeric_columns = numeric_columns.drop(["longitude", "latitude"])
+        filter_option = st.selectbox("Select Filter", numeric_columns, index=0, format_func=lambda x: f"{x}")
         selected_column = filter_option
         selected_column_name = column_mapping[selected_column]["name"]
         selected_column_desc = column_mapping[selected_column]["description"]
@@ -233,7 +288,7 @@ def map_visualization_page():
                 f"""
                 <div style="background-color: #f9f9f9; padding: 10px; border-radius: 5px; margin-bottom: 10px;">
                     <h4 style="color: #333;">Description:</h4>
-                    <p style="font-style: italic; color: #555;">{selected_column_desc}</p>
+                    <p>{selected_column_desc}</p>
                 </div>
                 """,
                 unsafe_allow_html=True
@@ -243,8 +298,8 @@ def map_visualization_page():
             geojson=geojson_data,
             locations=gdf.index,  # Use index to match geometry
             color=selected_column,
-            hover_name="Name",
-            hover_data=["PLN_AREA_N", "REGION_N", selected_column],
+            hover_name="PLN_AREA_N",
+            hover_data=[selected_column],
             title=f"{selected_column_name} Heatmap Data by Location",
             mapbox_style=map_style,
             center={
@@ -263,17 +318,78 @@ def map_visualization_page():
             lon="longitude",
             size=selected_column,
             color=selected_column,
-            hover_name="Name",
-            hover_data=["PLN_AREA_N", "REGION_N"],
+            hover_name="PLN_AREA_N",
+            hover_data=[selected_column],
             title=f"{selected_column_name} Scatter Plot Data by Location",
             mapbox_style=map_style,
         )
         # Display the map
         st.plotly_chart(fig2, use_container_width=True)
+
+
+        fig3 = px.density_mapbox(
+            gdf,
+            lat="latitude",
+            lon="longitude",
+            z=selected_column,
+            radius=10,
+            hover_name="PLN_AREA_N",
+            hover_data=[selected_column],
+            title=f"{selected_column_name} Density Plot Data by Location",
+            mapbox_style=map_style,
+        )
+        # Display the map
+        st.plotly_chart(fig3, use_container_width=True)
+
+        # fig4 = px.line_mapbox(
+        #     gdf,
+        #     lat="latitude",
+        #     lon="longitude",
+        #     color=selected_column,
+        #     hover_name="Name",
+        #     hover_data=["PLN_AREA_N", "REGION_N"],
+        #     title=f"{selected_column_name} Line Plot Data by Location",
+        #     mapbox_style=map_style,
+        # )
+
+        # st.plotly_chart(fig4, use_container_width=True)
+
+
+        # Display Custom GeoData from dwellings.geojson
+        st.subheader("Miscellaneous Data")
+        st.write("##### URA Number of Dwellings")
+        fig5 = px.scatter_mapbox(
+            dwellings,
+            lat=dwellings.geometry.centroid.y,
+            lon=dwellings.geometry.centroid.x,
+            color="PROP_TYPE",  # Color points based on property type
+            hover_data=["PROP_TYPE", "DU"],
+            title="URA Number of Dwellings by Location with Property Type",
+            mapbox_style="carto-positron",
+        )
+
+        st.plotly_chart(fig5, use_container_width=True)
+
+        st.write("##### Supermarkets in Singapore")
+
+        fig6 = px.scatter_mapbox(
+            supermarkets,
+            lat=dwellings.geometry.centroid.y,
+            lon=dwellings.geometry.centroid.x,
+            # color="UNIT_NO",
+            # hover_data=["STR_NAME", "POSTALCODE", "REGION"],
+            title="Supermarkets in Singapore",
+            mapbox_style="carto-positron",
+        )
+
+        st.plotly_chart(fig6, use_container_width=True)
+
+        #display housing types in gdf
     except Exception as e:
         st.warning(
             f"Could not load or display GeoData. Check your file path or data format.\n\nError: {e}"
         )
+
 
 
 def comparative_analysis_page():
@@ -291,8 +407,9 @@ def comparative_analysis_page():
     )
 
     if st.button("Compare with Other Countries"):
+        summary = generate_comparative_analysis(compare_query)
         st.markdown("### Comparative Analysis Results")
-        st.write("[Placeholder for AI-generated comparative analysis]")
+        st.write(summary)
 
 
 def synthetic_generation_page():
@@ -309,11 +426,15 @@ def synthetic_generation_page():
         value="Generate synthetic data for Singapore with demographic data to simulate population growth after a year",
     )
 
-    generate_synthetic_data_code(synthetic_query)
-
     if st.button("Generate Synthetic Data"):
+        csv_data = generate_synthetic_data_code(synthetic_query)
         st.markdown("### Synthetic Data")
-        st.write("[Placeholder for AI-generated synthetic data]")
+        st.download_button(
+            label="Download synthetic_data.csv",
+            data=csv_data,
+            file_name="synthetic_data.csv",
+            mime="text/csv"
+        )
 
 
 if __name__ == "__main__":

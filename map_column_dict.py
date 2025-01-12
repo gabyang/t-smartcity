@@ -17,7 +17,7 @@ column_mapping = {
     '1 ROOM': {'name': '1-Room Housing Units', 'description': 'The total number of 1-room housing units available in each planning area.'},
     'T-143/Total': {
         'name': 'Total Working Residents by Industry',
-        'description': 'Total number of working residents aged 15 and over categorized by industry in each planning area.'
+        'description': 'Total number of working residents aged 15 and over categorized by industry in each planning area by the thousands.'
     },
     'T-143/Manufacturing': {
         'name': 'Residents in Manufacturing Industry',
@@ -350,6 +350,14 @@ column_mapping = {
     'PSI/2019': {
         'name': 'Pollutant Standards Index (2019)',
         'description': 'Average Pollutant Standards Index (PSI) recorded in the planning area for the year 2019.'
+    },
+    'VEHICLE COUNT': {
+        'name': 'Vehicle Count',
+        'description': 'Total number of vehicles spotted within the time span of 2022-2023'
+    },
+    'VEHICLE FREQ': {
+        'name': 'Vehicle Frequency',
+        'description': 'Standard deviation of vehicles spotted within the time span of 2022-2023 for finding the most high traffic areas'
     }
 }
 
