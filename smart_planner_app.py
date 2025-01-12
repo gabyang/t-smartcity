@@ -7,7 +7,7 @@ import geopandas as gpd
 from map_column_dict import column_mapping
 from agents.synthetic_data_agent import generate_synthetic_data_code
 from agents.comparative_analysis_agent import generate_comparative_analysis
-
+from bs4 import BeautifulSoup
 
 # ----- PAGE CONFIG & STYLES -----
 st.set_page_config(
@@ -209,8 +209,28 @@ def map_visualization_page():
             # gdf_renamed = gdf.rename(columns=rename_dict, inplace=False)
 
             return gdf
+        
+        
+        def parse_description(description):
+            soup = BeautifulSoup(description, 'html.parser')
+            data = {}
+            for row in soup.find_all('tr'):
+                cells = row.find_all('td')
+                if len(cells) == 2:
+                    key = cells[0].text.strip()
+                    value = cells[1].text.strip()
+                    data[key] = value
+            return data
+
 
         gdf = load_data()
+        dwellings = gpd.read_file("data/dwellings.geojson")
+        # Apply the parsing function to the 'Description' column
+        dwellings_data = dwellings['Description'].apply(parse_description)
+
+        # Convert the parsed data to a DataFrame and concatenate with the original GeoDataFrame
+        dwellings_df = pd.DataFrame(dwellings_data.tolist())
+        dwellings = pd.concat([dwellings, dwellings_df], axis=1)
 
         # Convert GeoDataFrame to GeoJSON for choropleth
         geojson_data = gdf.__geo_interface__
@@ -286,6 +306,22 @@ def map_visualization_page():
         )
         # Display the map
         st.plotly_chart(fig3, use_container_width=True)
+
+
+        # Display Custom GeoData  from dweelings.geojson
+        # st.write("# Miscellaneous Data")
+        # st.write("### URA Number of Dwellings")
+        # fig4 = px.scatter_mapbox(
+        #     dwellings,
+        #     lat=dwellings.geometry.centroid.y,
+        #     lon=dwellings.geometry.centroid.x,
+        #     hover_data=["POSTALCODE", "PROP_TYPE", "X_ADDR", "Y_ADDR", "DU"],
+        #     title="URA Number of Dwellings by Location",
+        #     mapbox_style="carto-positron",
+        # )
+
+        # st.plotly_chart(fig4, use_container_width=True)
+                
 
     except Exception as e:
         st.warning(
