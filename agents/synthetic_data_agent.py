@@ -3,10 +3,11 @@ from openai import OpenAI
 client = OpenAI()
 import re
 
+
 def parse_query(user_query: str):
     """
     Expected format: 'generate synthetic data for <city_or_country> with <type_of_data> to <do_something>'
-    
+
     Returns:
         location (str): The city or country from the query
         data_type (str): The type of data requested (e.g. 'demographic data', 'financial data')
@@ -17,13 +18,16 @@ def parse_query(user_query: str):
     match = re.search(pattern, user_query, re.IGNORECASE)
 
     if not match:
-        raise ValueError("Query not in expected format: 'Generate synthetic data for <city/country> with <type_of_data> to <action>'")
+        raise ValueError(
+            "Query not in expected format: 'Generate synthetic data for <city/country> with <type_of_data> to <action>'"
+        )
 
     location = match.group(1).strip()
     data_type = match.group(2).strip()
     purpose = match.group(3).strip()
 
     return location, data_type, purpose
+
 
 def get_locale_for_location(location: str) -> str:
     """
@@ -65,27 +69,39 @@ def suggest_columns_for_data_type(data_type: str):
     if "demographic" in data_type_lower:
         # Basic demographic columns
         return [
-            {"name": "Id",      "type": "string", "description": "UUID"},
-            {"name": "Name",    "type": "string", "description": "Local Names"},
-            {"name": "Age",     "type": "int",    "description": "18 to 80"},
-            {"name": "Gender",  "type": "string", "description": "Inclusive"},
-            {"name": "Location","type": "string", "description": "City/Region"},
+            {"name": "Id", "type": "string", "description": "UUID"},
+            {"name": "Name", "type": "string", "description": "Local Names"},
+            {"name": "Age", "type": "int", "description": "18 to 80"},
+            {"name": "Gender", "type": "string", "description": "Inclusive"},
+            {"name": "Location", "type": "string", "description": "City/Region"},
         ]
     elif "financial" in data_type_lower:
         # Sample financial columns
         return [
-            {"name": "TransactionId",   "type": "string", "description": "UUID"},
-            {"name": "AccountHolder",   "type": "string", "description": "Name"},
-            {"name": "TransactionDate", "type": "datetime","description": "Random date/time"},
-            {"name": "Amount",          "type": "float",   "description": "Transaction amount"},
-            {"name": "Currency",        "type": "string",  "description": "Local currency code"},
+            {"name": "TransactionId", "type": "string", "description": "UUID"},
+            {"name": "AccountHolder", "type": "string", "description": "Name"},
+            {
+                "name": "TransactionDate",
+                "type": "datetime",
+                "description": "Random date/time",
+            },
+            {"name": "Amount", "type": "float", "description": "Transaction amount"},
+            {
+                "name": "Currency",
+                "type": "string",
+                "description": "Local currency code",
+            },
         ]
     else:
         # Fallback / default set of columns
         return [
-            {"name": "Id",      "type": "string", "description": "UUID"},
-            {"name": "Field1",  "type": "string", "description": "Faker-generated string"},
-            {"name": "Field2",  "type": "int",    "description": "Random integer"},
+            {"name": "Id", "type": "string", "description": "UUID"},
+            {
+                "name": "Field1",
+                "type": "string",
+                "description": "Faker-generated string",
+            },
+            {"name": "Field2", "type": "int", "description": "Random integer"},
         ]
 
 
@@ -116,16 +132,19 @@ def build_code_generation_prompt(location: str, locale: str, columns: list):
         """
     return prompt.strip()
 
+
 def generate_synthetic_data_code(user_query: str) -> str:
     location, data_type, purpose = parse_query(user_query)
     locale = get_locale_for_location(location)
     columns = suggest_columns_for_data_type(data_type)
     prompt_for_code = build_code_generation_prompt(location, locale, columns)
 
-    response = client.completions.create(model="text-davinci-003",  # or whichever model you prefer
-    prompt=prompt_for_code,
-    max_tokens=700,
-    temperature=0.2)
+    response = client.completions.create(
+        model="text-davinci-003",  # or whichever model you prefer
+        prompt=prompt_for_code,
+        max_tokens=700,
+        temperature=0.2,
+    )
 
     code_output = response.choices[0].text.strip()
     return code_output

@@ -10,9 +10,7 @@ from agents.synthetic_data_agent import generate_synthetic_data_code
 
 # ----- PAGE CONFIG & STYLES -----
 st.set_page_config(
-    page_title="SMART City Planner Insights App",
-    page_icon="🌆",
-    layout="wide"
+    page_title="SMART City Planner Insights App", page_icon="🌆", layout="wide"
 )
 
 # Inject a bit of CSS to style metric cards, titles, etc.
@@ -41,14 +39,21 @@ st.markdown(
     }
     </style>
     """,
-    unsafe_allow_html=True
+    unsafe_allow_html=True,
 )
+
 
 def main():
     st.sidebar.title("Navigation")
     selected_page = st.sidebar.radio(
         "Go to",
-        ["Dashboard", "Exploratory Data Insights", "Map Visualization", "Comparative Analysis", "Synthetic Generation"]
+        [
+            "Dashboard",
+            "Exploratory Data Insights",
+            "Map Visualization",
+            "Comparative Analysis",
+            "Synthetic Generation",
+        ],
     )
 
     st.sidebar.markdown("---")
@@ -113,8 +118,7 @@ def dashboard_page():
         st.metric(label="Processing Time", value="3 seconds", delta="↓0.1s")
         st.markdown("</div>", unsafe_allow_html=True)
 
-    st.write("---")    
-
+    st.write("---")
 
     st.subheader("Overview")
     st.write(
@@ -127,10 +131,7 @@ def dashboard_page():
 
     with st.container():
         st.markdown("### Data Extraction")
-        chart_data = pd.DataFrame(
-            np.random.randn(20, 3),
-            columns=['A', 'B', 'C']
-        )
+        chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["A", "B", "C"])
         st.line_chart(chart_data)
 
     with st.container():
@@ -138,16 +139,14 @@ def dashboard_page():
         with col1:
             st.markdown("### Model Training")
             bar_data = pd.DataFrame(
-                np.random.randn(20, 2),
-                columns=['Train', 'Validation']
+                np.random.randn(20, 2), columns=["Train", "Validation"]
             )
             st.bar_chart(bar_data)
 
         with col2:
             st.markdown("### Data Annotation")
             area_data = pd.DataFrame(
-                np.random.randn(20, 2),
-                columns=['Label1', 'Label2']
+                np.random.randn(20, 2), columns=["Label1", "Label2"]
             )
             st.area_chart(area_data)
 
@@ -164,9 +163,9 @@ def query_ai_agent_page():
     )
     user_query = st.text_input(
         "What would you like to find out?",
-        value="What are the key transportation challenges the city is facing?"
+        value="What are the key transportation challenges the city is facing?",
     )
-    
+
     if st.button("Get Insight Report"):
         st.markdown("### Insight Report")
         # Placeholder text
@@ -175,7 +174,6 @@ def query_ai_agent_page():
 
 
 def map_visualization_page():
-
 
     st.subheader("Map Visualization")
     st.write(
@@ -186,42 +184,39 @@ def map_visualization_page():
     )
 
     try:
+
         @st.cache_data
         def load_data():
             # Load the GeoDataFrame
             gdf = gpd.read_file("data/gdf.geojson")
-            gdf['longitude'] = gdf.geometry.centroid.x
-            gdf['latitude'] = gdf.geometry.centroid.y
-
+            gdf["longitude"] = gdf.geometry.centroid.x
+            gdf["latitude"] = gdf.geometry.centroid.y
 
             # Rename columns based on column_mapping
             # rename_dict = {col: column_mapping[col]['name'] for col in gdf.columns if col in column_mapping}
             # gdf_renamed = gdf.rename(columns=rename_dict, inplace=False)
 
             return gdf
-        
+
         gdf = load_data()
 
-         # Convert GeoDataFrame to GeoJSON for choropleth
+        # Convert GeoDataFrame to GeoJSON for choropleth
         geojson_data = gdf.__geo_interface__
 
-        numeric_columns = gdf.select_dtypes(include=[np.number]).columns   
+        numeric_columns = gdf.select_dtypes(include=[np.number]).columns
         # numeric_columns = numeric_columns.drop(["longitude", "latitude"])
 
         filter_option = st.selectbox("Select Filter", numeric_columns, index=0)
         selected_column = filter_option
-        selected_column_name = column_mapping[selected_column]['name']
-        selected_column_desc = column_mapping[selected_column]['description']
-
-        
+        selected_column_name = column_mapping[selected_column]["name"]
+        selected_column_desc = column_mapping[selected_column]["description"]
 
         # Map style selection
         map_style = st.sidebar.selectbox(
             "Select Map Style",
-            options=["carto-positron", "carto-darkmatter", "open-street-map"]
+            options=["carto-positron", "carto-darkmatter", "open-street-map"],
         )
 
-        
         # st.markdown(f"Display Name: **{selected_column}**")
         # st.markdown(f"### Data: **{selected_column_name}**")
         st.markdown(f"#### Description: *{selected_column_desc}*")
@@ -234,7 +229,10 @@ def map_visualization_page():
             hover_data=["PLN_AREA_N", "REGION_N", selected_column],
             title=f"{selected_column_name} Heatmap Data by Location",
             mapbox_style=map_style,
-            center={"lat": gdf.geometry.centroid.y.mean(), "lon": gdf.geometry.centroid.x.mean()},
+            center={
+                "lat": gdf.geometry.centroid.y.mean(),
+                "lon": gdf.geometry.centroid.x.mean(),
+            },
         )
 
         st.plotly_chart(fig, use_container_width=True)
@@ -259,8 +257,6 @@ def map_visualization_page():
             f"Could not load or display GeoData. Check your file path or data format.\n\nError: {e}"
         )
 
-    
-
 
 def comparative_analysis_page():
     st.subheader("Comparative Analysis")
@@ -273,9 +269,9 @@ def comparative_analysis_page():
 
     compare_query = st.text_input(
         "For example: 'How do cities like Tokyo address demographic aging?'",
-        value="How do cities like Tokyo address demographic aging?"
+        value="How do cities like Tokyo address demographic aging?",
     )
-    
+
     if st.button("Compare with Other Countries"):
         st.markdown("### Comparative Analysis Results")
         st.write("[Placeholder for AI-generated comparative analysis]")
@@ -292,14 +288,15 @@ def synthetic_generation_page():
 
     synthetic_query = st.text_input(
         "For example: 'Generate synthetic data for a new city with demographic data'",
-        value="Generate synthetic data for Singapore with demographic data to simulate population growth after a year"
+        value="Generate synthetic data for Singapore with demographic data to simulate population growth after a year",
     )
 
     generate_synthetic_data_code(synthetic_query)
-    
+
     if st.button("Generate Synthetic Data"):
         st.markdown("### Synthetic Data")
         st.write("[Placeholder for AI-generated synthetic data]")
+
 
 if __name__ == "__main__":
     main()
