@@ -193,8 +193,6 @@ def map_visualization_page():
     with st.expander("See Column Specifications"):
         st.write(mapping_df)
 
-    
-
     try:
 
         @st.cache_data
@@ -245,7 +243,7 @@ def map_visualization_page():
 
         numeric_columns = gdf.select_dtypes(include=[np.number]).columns
         numeric_columns = numeric_columns.drop(["longitude", "latitude"])
-        filter_option = st.selectbox("Select Filter", numeric_columns, index=0)
+        filter_option = st.selectbox("Select Filter", numeric_columns, index=0, format_func=lambda x: f"{x}")
         selected_column = filter_option
         selected_column_name = column_mapping[selected_column]["name"]
         selected_column_desc = column_mapping[selected_column]["description"]
