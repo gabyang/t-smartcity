@@ -236,10 +236,10 @@ def map_visualization_page():
             dwellings = dwellings.drop(columns=['Description'])
             return dwellings[:10000]
 
-
-        gdf = load_data()
-        dwellings = load_dwellings_data()
-        geojson_data = gdf.__geo_interface__
+        with st.spinner("Loading data..."):
+            gdf = load_data()
+            dwellings = load_dwellings_data()
+            geojson_data = gdf.__geo_interface__
 
         numeric_columns = gdf.select_dtypes(include=[np.number]).columns
         numeric_columns = numeric_columns.drop(["longitude", "latitude"])
@@ -270,8 +270,8 @@ def map_visualization_page():
             geojson=geojson_data,
             locations=gdf.index,  # Use index to match geometry
             color=selected_column,
-            hover_name="Name",
-            hover_data=["PLN_AREA_N", "REGION_N", selected_column],
+            hover_name="PLN_AREA_N",
+            hover_data=[selected_column],
             title=f"{selected_column_name} Heatmap Data by Location",
             mapbox_style=map_style,
             center={
@@ -290,8 +290,8 @@ def map_visualization_page():
             lon="longitude",
             size=selected_column,
             color=selected_column,
-            hover_name="Name",
-            hover_data=["PLN_AREA_N", "REGION_N"],
+            hover_name="PLN_AREA_N",
+            hover_data=[selected_column],
             title=f"{selected_column_name} Scatter Plot Data by Location",
             mapbox_style=map_style,
         )
@@ -305,13 +305,13 @@ def map_visualization_page():
             lon="longitude",
             z=selected_column,
             radius=10,
-            hover_name="Name",
-            hover_data=["PLN_AREA_N", "REGION_N"],
+            hover_name="PLN_AREA_N",
+            hover_data=[selected_column],
             title=f"{selected_column_name} Density Plot Data by Location",
             mapbox_style=map_style,
         )
         # Display the map
-        # st.plotly_chart(fig3, use_container_width=True)
+        st.plotly_chart(fig3, use_container_width=True)
 
         # fig4 = px.line_mapbox(
         #     gdf,
@@ -327,20 +327,20 @@ def map_visualization_page():
         # st.plotly_chart(fig4, use_container_width=True)
 
 
-        # Display Custom GeoData from dweelings.geojson
-        st.write("# Miscellaneous Data")
-        st.write("### URA Number of Dwellings")
+        # Display Custom GeoData from dwellings.geojson
+        st.subheader("Miscellaneous Data")
+        st.write("##### URA Number of Dwellings")
         fig5 = px.scatter_mapbox(
             dwellings,
             lat=dwellings.geometry.centroid.y,
             lon=dwellings.geometry.centroid.x,
-            hover_data=["POSTALCODE", "PROP_TYPE", "X_ADDR", "Y_ADDR", "DU"],
+            color="PROP_TYPE",  # Color points based on property type
+            hover_data=["PROP_TYPE", "DU"],
             title="URA Number of Dwellings by Location with Property Type",
             mapbox_style="carto-positron",
         )
 
         st.plotly_chart(fig5, use_container_width=True)
-                
     except Exception as e:
         st.warning(
             f"Could not load or display GeoData. Check your file path or data format.\n\nError: {e}"

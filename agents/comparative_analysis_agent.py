@@ -78,7 +78,7 @@ def summarize_search_results(results: list, user_query: str) -> str:
         "And so on for 5 case studies"
     )
 
-    response = openai.chat.completions.create(
+    response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": system_prompt},
@@ -88,7 +88,7 @@ def summarize_search_results(results: list, user_query: str) -> str:
         max_tokens=600,
     )
 
-    return response.choices[0].message.content.strip()
+    return response.choices[0].message['content'].strip()
 
 
 def generate_comparative_analysis(user_query: str) -> str:
