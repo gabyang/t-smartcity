@@ -122,10 +122,6 @@ def generate_synthetic_data_code(user_query: str) -> str:
     columns = suggest_columns_for_data_type(data_type)
     prompt_for_code = build_code_generation_prompt(location, locale, columns)
 
-    # 5. Call OpenAI to generate code (requires your API key)
-    #    Make sure you have set your environment variable OPENAI_API_KEY 
-    #    or use openai.api_key = "YOUR_KEY"
-
     response = client.completions.create(model="text-davinci-003",  # or whichever model you prefer
     prompt=prompt_for_code,
     max_tokens=700,
@@ -133,20 +129,3 @@ def generate_synthetic_data_code(user_query: str) -> str:
 
     code_output = response.choices[0].text.strip()
     return code_output
-
-
-if __name__ == "__main__":
-    # Example prompt:
-    user_prompt = "generate synthetic data for Singapore with demographic data to simulate population growth after a year"
-
-    try:
-        generated_code = generate_synthetic_data_code(user_prompt)
-
-        # If you want to execute the code in Python directly (be cautious with eval/exec!)
-        # exec(generated_code)
-        #
-        # The above exec would create the CSV file. 
-        # Make sure to carefully inspect any generated code before running it in a live environment!
-
-    except Exception as e:
-        print(f"Error: {e}")
