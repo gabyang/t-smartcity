@@ -7,9 +7,7 @@
 - **Insights Snapshot**: Provides real-time updates on evolving datasets.
 - **Geospatial Visualization**: Displays land use, meteorological, and spatial relationships through interactive maps.
 - **Comparative Analysis**: Facilitates benchmarking by comparing datasets across countries for case studies.
-- **Synthetic Data Generation**: Simulates scenarios for planning and decision-making.
-
----
+- **Synthetic Data Generation**: Simulates scenarios for planning and decision-making by generating files that can be used for various purposes.
 
 ---
 
