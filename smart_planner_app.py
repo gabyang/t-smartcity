@@ -190,7 +190,7 @@ def map_visualization_page():
     # select only the columns that are after Multigenerational housing
     mapping_df = mapping_df.iloc[9:]
     # Create a toggleable section for documentation
-    with st.expander("Documentation for the columns"):
+    with st.expander("See Column Specifications"):
         st.write(mapping_df)
 
     
@@ -216,7 +216,7 @@ def map_visualization_page():
         geojson_data = gdf.__geo_interface__
 
         numeric_columns = gdf.select_dtypes(include=[np.number]).columns
-        # numeric_columns = numeric_columns.drop(["longitude", "latitude"])
+        numeric_columns = numeric_columns.drop(["longitude", "latitude"])
         filter_option = st.selectbox("Select Filter", numeric_columns, index=0)
         selected_column = filter_option
         selected_column_name = column_mapping[selected_column]["name"]
@@ -234,7 +234,7 @@ def map_visualization_page():
                 f"""
                 <div style="background-color: #f9f9f9; padding: 10px; border-radius: 5px; margin-bottom: 10px;">
                     <h4 style="color: #333;">Description:</h4>
-                    <p style="font-style: italic; color: #555;">{selected_column_desc}</p>
+                    <p>{selected_column_desc}</p>
                 </div>
                 """,
                 unsafe_allow_html=True
@@ -271,6 +271,22 @@ def map_visualization_page():
         )
         # Display the map
         st.plotly_chart(fig2, use_container_width=True)
+
+
+        fig3 = px.density_mapbox(
+            gdf,
+            lat="latitude",
+            lon="longitude",
+            z=selected_column,
+            radius=10,
+            hover_name="Name",
+            hover_data=["PLN_AREA_N", "REGION_N"],
+            title=f"{selected_column_name} Density Plot Data by Location",
+            mapbox_style=map_style,
+        )
+        # Display the map
+        st.plotly_chart(fig3, use_container_width=True)
+
     except Exception as e:
         st.warning(
             f"Could not load or display GeoData. Check your file path or data format.\n\nError: {e}"

@@ -108,8 +108,8 @@
         "PSI/2017": 52.157616707616711,
         "PSI/2018": 52.591935483870969,
         "PSI/2019": 54.282051282051285,
-        "vehicle_count": 6684.0,
-        "vehicle_freq": 0.32411114044492817
+        "VEHICLE COUNT": 6684.0,
+        "VEHICLE FREQ": 0.32411114044492817
       },
       "geometry": {
         "type": "Polygon",
@@ -974,8 +974,8 @@
         "PSI/2017": 46.014864864864862,
         "PSI/2018": 52.349007444168734,
         "PSI/2019": 53.319295229909756,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "Polygon",
@@ -2100,8 +2100,8 @@
         "PSI/2017": 46.014864864864862,
         "PSI/2018": 52.349007444168734,
         "PSI/2019": 53.319295229909756,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "Polygon",
@@ -2489,8 +2489,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 11673.0,
-        "vehicle_freq": 0.56603072148618294
+        "VEHICLE COUNT": 11673.0,
+        "VEHICLE FREQ": 0.56603072148618294
       },
       "geometry": {
         "type": "Polygon",
@@ -5021,8 +5021,8 @@
         "PSI/2017": 46.014864864864862,
         "PSI/2018": 52.349007444168734,
         "PSI/2019": 53.319295229909756,
-        "vehicle_count": 7607.0,
-        "vehicle_freq": 0.36886796010840345
+        "VEHICLE COUNT": 7607.0,
+        "VEHICLE FREQ": 0.36886796010840345
       },
       "geometry": {
         "type": "Polygon",
@@ -5359,8 +5359,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 4190.0,
-        "vehicle_freq": 0.20317559522206002
+        "VEHICLE COUNT": 4190.0,
+        "VEHICLE FREQ": 0.20317559522206002
       },
       "geometry": {
         "type": "Polygon",
@@ -6321,8 +6321,8 @@
         "PSI/2017": 55.003316953316954,
         "PSI/2018": 51.225434243176181,
         "PSI/2019": 54.554218593324741,
-        "vehicle_count": 28222.0,
-        "vehicle_freq": 1.3685015867200423
+        "VEHICLE COUNT": 28222.0,
+        "VEHICLE FREQ": 1.3685015867200423
       },
       "geometry": {
         "type": "Polygon",
@@ -7201,8 +7201,8 @@
         "PSI/2017": 52.157616707616711,
         "PSI/2018": 52.591935483870969,
         "PSI/2019": 54.282051282051285,
-        "vehicle_count": 2857.0,
-        "vehicle_freq": 0.13853763139604425
+        "VEHICLE COUNT": 2857.0,
+        "VEHICLE FREQ": 0.13853763139604425
       },
       "geometry": {
         "type": "Polygon",
@@ -8269,8 +8269,8 @@
         "PSI/2017": 46.014864864864862,
         "PSI/2018": 52.349007444168734,
         "PSI/2019": 53.319295229909756,
-        "vehicle_count": 5113.0,
-        "vehicle_freq": 0.24793241488553525
+        "VEHICLE COUNT": 5113.0,
+        "VEHICLE FREQ": 0.24793241488553525
       },
       "geometry": {
         "type": "Polygon",
@@ -8582,8 +8582,8 @@
         "PSI/2017": 46.014864864864862,
         "PSI/2018": 52.349007444168734,
         "PSI/2019": 53.319295229909756,
-        "vehicle_count": 14575.0,
-        "vehicle_freq": 0.70675042968055479
+        "VEHICLE COUNT": 14575.0,
+        "VEHICLE FREQ": 0.70675042968055479
       },
       "geometry": {
         "type": "Polygon",
@@ -9022,8 +9022,8 @@
         "PSI/2017": 0.0,
         "PSI/2018": 0.0,
         "PSI/2019": 0.0,
-        "vehicle_count": 2423.0,
-        "vehicle_freq": 0.11749271294106239
+        "VEHICLE COUNT": 2423.0,
+        "VEHICLE FREQ": 0.11749271294106239
       },
       "geometry": {
         "type": "Polygon",
@@ -9611,8 +9611,8 @@
         "PSI/2017": 46.014864864864862,
         "PSI/2018": 52.349007444168734,
         "PSI/2019": 53.319295229909756,
-        "vehicle_count": 3268.0,
-        "vehicle_freq": 0.15846726615410311
+        "VEHICLE COUNT": 3268.0,
+        "VEHICLE FREQ": 0.15846726615410311
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -10661,8 +10661,8 @@
         "PSI/2017": 46.014864864864862,
         "PSI/2018": 52.349007444168734,
         "PSI/2019": 53.319295229909756,
-        "vehicle_count": 2208.0,
-        "vehicle_freq": 0.10706723490460823
+        "VEHICLE COUNT": 2208.0,
+        "VEHICLE FREQ": 0.10706723490460823
       },
       "geometry": {
         "type": "Polygon",
@@ -11050,8 +11050,8 @@
         "PSI/2017": 52.157616707616711,
         "PSI/2018": 52.591935483870969,
         "PSI/2019": 54.282051282051285,
-        "vehicle_count": 12387.0,
-        "vehicle_freq": 0.60065300668631438
+        "VEHICLE COUNT": 12387.0,
+        "VEHICLE FREQ": 0.60065300668631438
       },
       "geometry": {
         "type": "Polygon",
@@ -11827,8 +11827,8 @@
         "PSI/2017": 46.014864864864862,
         "PSI/2018": 52.349007444168734,
         "PSI/2019": 53.319295229909756,
-        "vehicle_count": 1112.0,
-        "vehicle_freq": 0.053921542216451235
+        "VEHICLE COUNT": 1112.0,
+        "VEHICLE FREQ": 0.053921542216451235
       },
       "geometry": {
         "type": "Polygon",
@@ -13017,8 +13017,8 @@
         "PSI/2017": 0.0,
         "PSI/2018": 0.0,
         "PSI/2019": 0.0,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "Polygon",
@@ -13764,8 +13764,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 14789.0,
-        "vehicle_freq": 0.71712741712149053
+        "VEHICLE COUNT": 14789.0,
+        "VEHICLE FREQ": 0.71712741712149053
       },
       "geometry": {
         "type": "Polygon",
@@ -14780,8 +14780,8 @@
         "PSI/2017": 0.0,
         "PSI/2018": 0.0,
         "PSI/2019": 0.0,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -15308,8 +15308,8 @@
         "PSI/2017": 55.003316953316954,
         "PSI/2018": 51.225434243176181,
         "PSI/2019": 54.554218593324741,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "Polygon",
@@ -16201,8 +16201,8 @@
         "PSI/2017": 0.0,
         "PSI/2018": 0.0,
         "PSI/2019": 0.0,
-        "vehicle_count": 7842.0,
-        "vehicle_freq": 0.38026325005522543
+        "VEHICLE COUNT": 7842.0,
+        "VEHICLE FREQ": 0.38026325005522543
       },
       "geometry": {
         "type": "Polygon",
@@ -16609,8 +16609,8 @@
         "PSI/2017": 0.0,
         "PSI/2018": 0.0,
         "PSI/2019": 0.0,
-        "vehicle_count": 17801.0,
-        "vehicle_freq": 0.86318109082288541
+        "VEHICLE COUNT": 17801.0,
+        "VEHICLE FREQ": 0.86318109082288541
       },
       "geometry": {
         "type": "Polygon",
@@ -17127,8 +17127,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 34392.0,
-        "vehicle_freq": 1.6676885610685173
+        "VEHICLE COUNT": 34392.0,
+        "VEHICLE FREQ": 1.6676885610685173
       },
       "geometry": {
         "type": "Polygon",
@@ -17688,8 +17688,8 @@
         "PSI/2017": 55.003316953316954,
         "PSI/2018": 51.225434243176181,
         "PSI/2019": 54.554218593324741,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "Polygon",
@@ -19435,8 +19435,8 @@
         "PSI/2017": 0.0,
         "PSI/2018": 0.0,
         "PSI/2019": 0.0,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -21086,8 +21086,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 28346.0,
-        "vehicle_freq": 1.3745144205643229
+        "VEHICLE COUNT": 28346.0,
+        "VEHICLE FREQ": 1.3745144205643229
       },
       "geometry": {
         "type": "Polygon",
@@ -21535,8 +21535,8 @@
         "PSI/2017": 55.003316953316954,
         "PSI/2018": 51.225434243176181,
         "PSI/2019": 54.554218593324741,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22247,8 +22247,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -26276,8 +26276,8 @@
         "PSI/2017": 55.003316953316954,
         "PSI/2018": 51.225434243176181,
         "PSI/2019": 54.554218593324741,
-        "vehicle_count": 11970.0,
-        "vehicle_freq": 0.58043242835514519
+        "VEHICLE COUNT": 11970.0,
+        "VEHICLE FREQ": 0.58043242835514519
       },
       "geometry": {
         "type": "Polygon",
@@ -26857,8 +26857,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 12962.0,
-        "vehicle_freq": 0.62853509910938943
+        "VEHICLE COUNT": 12962.0,
+        "VEHICLE FREQ": 0.62853509910938943
       },
       "geometry": {
         "type": "Polygon",
@@ -27289,8 +27289,8 @@
         "PSI/2017": 46.014864864864862,
         "PSI/2018": 52.349007444168734,
         "PSI/2019": 53.319295229909756,
-        "vehicle_count": 15996.0,
-        "vehicle_freq": 0.77565556591218887
+        "VEHICLE COUNT": 15996.0,
+        "VEHICLE FREQ": 0.77565556591218887
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -28755,8 +28755,8 @@
         "PSI/2017": 46.014864864864862,
         "PSI/2018": 52.349007444168734,
         "PSI/2019": 53.319295229909756,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -33125,8 +33125,8 @@
         "PSI/2017": 46.014864864864862,
         "PSI/2018": 52.349007444168734,
         "PSI/2019": 53.319295229909756,
-        "vehicle_count": 8078.0,
-        "vehicle_freq": 0.39170703059756579
+        "VEHICLE COUNT": 8078.0,
+        "VEHICLE FREQ": 0.39170703059756579
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -35139,8 +35139,8 @@
         "PSI/2017": 55.003316953316954,
         "PSI/2018": 51.225434243176181,
         "PSI/2019": 54.554218593324741,
-        "vehicle_count": 12522.0,
-        "vehicle_freq": 0.60719923708129719
+        "VEHICLE COUNT": 12522.0,
+        "VEHICLE FREQ": 0.60719923708129719
       },
       "geometry": {
         "type": "Polygon",
@@ -35851,8 +35851,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "Polygon",
@@ -36385,8 +36385,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "Polygon",
@@ -36954,8 +36954,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "Polygon",
@@ -37365,8 +37365,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 1387.0,
-        "vehicle_freq": 0.067256455984008867
+        "VEHICLE COUNT": 1387.0,
+        "VEHICLE FREQ": 0.067256455984008867
       },
       "geometry": {
         "type": "Polygon",
@@ -37581,8 +37581,8 @@
         "PSI/2017": 52.157616707616711,
         "PSI/2018": 52.591935483870969,
         "PSI/2019": 54.282051282051285,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -38216,8 +38216,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 11200.0,
-        "vehicle_freq": 0.54309466980598375
+        "VEHICLE COUNT": 11200.0,
+        "VEHICLE FREQ": 0.54309466980598375
       },
       "geometry": {
         "type": "Polygon",
@@ -38902,8 +38902,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 2322.0,
-        "vehicle_freq": 0.11259516279370485
+        "VEHICLE COUNT": 2322.0,
+        "VEHICLE FREQ": 0.11259516279370485
       },
       "geometry": {
         "type": "Polygon",
@@ -39653,8 +39653,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 771.0,
-        "vehicle_freq": 0.037386249144679751
+        "VEHICLE COUNT": 771.0,
+        "VEHICLE FREQ": 0.037386249144679751
       },
       "geometry": {
         "type": "Polygon",
@@ -40066,8 +40066,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 96.0,
-        "vehicle_freq": 0.0046550971697655874
+        "VEHICLE COUNT": 96.0,
+        "VEHICLE FREQ": 0.0046550971697655874
       },
       "geometry": {
         "type": "Polygon",
@@ -40332,8 +40332,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "Polygon",
@@ -40792,8 +40792,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "Polygon",
@@ -41444,8 +41444,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "Polygon",
@@ -42145,8 +42145,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 6215.0,
-        "vehicle_freq": 0.30136905114680257
+        "VEHICLE COUNT": 6215.0,
+        "VEHICLE FREQ": 0.30136905114680257
       },
       "geometry": {
         "type": "Polygon",
@@ -42569,8 +42569,8 @@
         "PSI/2017": 52.157616707616711,
         "PSI/2018": 52.591935483870969,
         "PSI/2019": 54.282051282051285,
-        "vehicle_count": 8617.0,
-        "vehicle_freq": 0.41784346158197877
+        "VEHICLE COUNT": 8617.0,
+        "VEHICLE FREQ": 0.41784346158197877
       },
       "geometry": {
         "type": "Polygon",
@@ -43263,8 +43263,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "Polygon",
@@ -43876,8 +43876,8 @@
         "PSI/2017": 46.014864864864862,
         "PSI/2018": 52.349007444168734,
         "PSI/2019": 53.319295229909756,
-        "vehicle_count": 0.0,
-        "vehicle_freq": 0.0
+        "VEHICLE COUNT": 0.0,
+        "VEHICLE FREQ": 0.0
       },
       "geometry": {
         "type": "Polygon",
@@ -44150,8 +44150,8 @@
         "PSI/2017": 55.003316953316954,
         "PSI/2018": 51.225434243176181,
         "PSI/2019": 54.554218593324741,
-        "vehicle_count": 5467.0,
-        "vehicle_freq": 0.2650980856990458
+        "VEHICLE COUNT": 5467.0,
+        "VEHICLE FREQ": 0.2650980856990458
       },
       "geometry": {
         "type": "Polygon",
@@ -44532,8 +44532,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 10622.0,
-        "vehicle_freq": 0.51506710559635349
+        "VEHICLE COUNT": 10622.0,
+        "VEHICLE FREQ": 0.51506710559635349
       },
       "geometry": {
         "type": "Polygon",
@@ -45017,8 +45017,8 @@
         "PSI/2017": 0.0,
         "PSI/2018": 0.0,
         "PSI/2019": 0.0,
-        "vehicle_count": 12013.0,
-        "vehicle_freq": 0.58251752396243595
+        "VEHICLE COUNT": 12013.0,
+        "VEHICLE FREQ": 0.58251752396243595
       },
       "geometry": {
         "type": "Polygon",
@@ -45609,8 +45609,8 @@
         "PSI/2017": 50.719656019656021,
         "PSI/2018": 53.725930521091811,
         "PSI/2019": 56.161724681277754,
-        "vehicle_count": 28942.0,
-        "vehicle_freq": 1.4034148154932842
+        "VEHICLE COUNT": 28942.0,
+        "VEHICLE FREQ": 1.4034148154932842
       },
       "geometry": {
         "type": "Polygon",
@@ -46082,8 +46082,8 @@
         "PSI/2017": 52.157616707616711,
         "PSI/2018": 52.591935483870969,
         "PSI/2019": 54.282051282051285,
-        "vehicle_count": 6345.0,
-        "vehicle_freq": 0.30767282856419348
+        "VEHICLE COUNT": 6345.0,
+        "VEHICLE FREQ": 0.30767282856419348
       },
       "geometry": {
         "type": "Polygon",
@@ -46583,8 +46583,8 @@
         "PSI/2017": 55.003316953316954,
         "PSI/2018": 51.225434243176181,
         "PSI/2019": 54.554218593324741,
-        "vehicle_count": 10192.0,
-        "vehicle_freq": 0.49421614952344523
+        "VEHICLE COUNT": 10192.0,
+        "VEHICLE FREQ": 0.49421614952344523
       },
       "geometry": {
         "type": "Polygon",

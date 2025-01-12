@@ -351,11 +351,11 @@ column_mapping = {
         'name': 'Pollutant Standards Index (2019)',
         'description': 'Average Pollutant Standards Index (PSI) recorded in the planning area for the year 2019.'
     },
-    'vehicle_count': {
+    'VEHICLE COUNT': {
         'name': 'Vehicle Count',
         'description': 'Total number of vehicles spotted within the time span of 2022-2023'
     },
-    'vehicle_freq': {
+    'VEHICLE FREQ': {
         'name': 'Vehicle Frequency',
         'description': 'Standard deviation of vehicles spotted within the time span of 2022-2023 for finding the most high traffic areas'
     }
