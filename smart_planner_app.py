@@ -214,25 +214,33 @@ def map_visualization_page():
         def parse_description(description):
             soup = BeautifulSoup(description, 'html.parser')
             data = {}
+            
+            # Find all table rows within the table
             for row in soup.find_all('tr'):
-                cells = row.find_all('td')
-                if len(cells) == 2:
-                    key = cells[0].text.strip()
-                    value = cells[1].text.strip()
+                # Find all cells in the row
+                cells = row.find_all(['th', 'td'])  # Include both th and td
+                if len(cells) == 2:  # Ensure the row has exactly 2 cells
+                    key = cells[0].text.strip()  # First cell is the key
+                    value = cells[1].text.strip()  # Second cell is the value
                     data[key] = value
+            
             return data
+
+        @st.cache_data
+        def load_dwellings_data():
+            dwellings = gpd.read_file("data/dwellings.geojson")
+            # Apply the parsing function to the 'Description' column
+            dwellings_data = dwellings['Description'].apply(parse_description)
+
+            # Convert the parsed data to a DataFrame and concatenate with the original GeoDataFrame
+            dwellings_df = pd.DataFrame(dwellings_data.tolist())
+            dwellings = pd.concat([dwellings, dwellings_df], axis=1)
+            dwellings = dwellings.drop(columns=['Description'])
+            return dwellings[:10000]
 
 
         gdf = load_data()
-        dwellings = gpd.read_file("data/dwellings.geojson")
-        # Apply the parsing function to the 'Description' column
-        dwellings_data = dwellings['Description'].apply(parse_description)
-
-        # Convert the parsed data to a DataFrame and concatenate with the original GeoDataFrame
-        dwellings_df = pd.DataFrame(dwellings_data.tolist())
-        dwellings = pd.concat([dwellings, dwellings_df], axis=1)
-
-        # Convert GeoDataFrame to GeoJSON for choropleth
+        dwellings = load_dwellings_data()
         geojson_data = gdf.__geo_interface__
 
         numeric_columns = gdf.select_dtypes(include=[np.number]).columns
@@ -305,24 +313,36 @@ def map_visualization_page():
             mapbox_style=map_style,
         )
         # Display the map
-        st.plotly_chart(fig3, use_container_width=True)
+        # st.plotly_chart(fig3, use_container_width=True)
 
-
-        # Display Custom GeoData  from dweelings.geojson
-        # st.write("# Miscellaneous Data")
-        # st.write("### URA Number of Dwellings")
-        # fig4 = px.scatter_mapbox(
-        #     dwellings,
-        #     lat=dwellings.geometry.centroid.y,
-        #     lon=dwellings.geometry.centroid.x,
-        #     hover_data=["POSTALCODE", "PROP_TYPE", "X_ADDR", "Y_ADDR", "DU"],
-        #     title="URA Number of Dwellings by Location",
-        #     mapbox_style="carto-positron",
+        # fig4 = px.line_mapbox(
+        #     gdf,
+        #     lat="latitude",
+        #     lon="longitude",
+        #     color=selected_column,
+        #     hover_name="Name",
+        #     hover_data=["PLN_AREA_N", "REGION_N"],
+        #     title=f"{selected_column_name} Line Plot Data by Location",
+        #     mapbox_style=map_style,
         # )
 
         # st.plotly_chart(fig4, use_container_width=True)
-                
 
+
+        # Display Custom GeoData from dweelings.geojson
+        st.write("# Miscellaneous Data")
+        st.write("### URA Number of Dwellings")
+        fig5 = px.scatter_mapbox(
+            dwellings,
+            lat=dwellings.geometry.centroid.y,
+            lon=dwellings.geometry.centroid.x,
+            hover_data=["POSTALCODE", "PROP_TYPE", "X_ADDR", "Y_ADDR", "DU"],
+            title="URA Number of Dwellings by Location with Property Type",
+            mapbox_style="carto-positron",
+        )
+
+        st.plotly_chart(fig5, use_container_width=True)
+                
     except Exception as e:
         st.warning(
             f"Could not load or display GeoData. Check your file path or data format.\n\nError: {e}"
