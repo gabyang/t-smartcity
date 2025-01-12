@@ -142,12 +142,15 @@ def generate_synthetic_data_code(user_query: str) -> str:
     columns = suggest_columns_for_data_type(data_type)
     prompt_for_code = build_code_generation_prompt(location, locale, columns)
 
-    response = openai.completions.create(
+    response = openai.chat.completions.create(
         model="gpt-3.5-turbo",
-        prompt=prompt_for_code,
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant that generates Python code."},
+            {"role": "user", "content": prompt_for_code}
+        ],
         max_tokens=700,
         temperature=0.2,
     )
 
-    code_output = response.choices[0].text.strip()
+    code_output = response.choices[0].message.content.strip()
     return code_output
