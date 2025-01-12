@@ -109,7 +109,7 @@ streamlit run smart_planner_app.py
 2. **Demonstration**:
    - Showcase the working solution, highlighting key features and functionality.
 
---- -->
+----->
 
 
 
