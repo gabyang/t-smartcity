@@ -2,6 +2,9 @@ import streamlit as st
 import geopandas as gpd
 import pandas as pd
 import numpy as np
+import time
+import plotly.express as px
+import geopandas as gpd
 
 # ----- PAGE CONFIG & STYLES -----
 st.set_page_config(
@@ -163,6 +166,8 @@ def query_ai_agent_page():
 
 
 def map_visualization_page():
+
+
     st.subheader("Map Visualization")
     st.write(
         """
@@ -170,20 +175,69 @@ def map_visualization_page():
         Select different **filters** to visualize them on the map.
         """
     )
-    filter_option = st.selectbox(
-        "Select a filter to visualize:",
-        ["Population Density", "Median Income", "CO2 Emissions"]
-    )
 
     try:
-        gdf = gpd.read_file("data/new_gdf.geojson")
+        @st.cache_data
+        def load_data():
+            # Load the GeoDataFrame
+            gdf = gpd.read_file("data/gdf.geojson")
+            gdf['longitude'] = gdf.geometry.centroid.x
+            gdf['latitude'] = gdf.geometry.centroid.y
+            return gdf
+        
+        gdf = load_data()
+
+         # Convert GeoDataFrame to GeoJSON for choropleth
+        geojson_data = gdf.__geo_interface__
+
+        numeric_columns = gdf.select_dtypes(include=[np.number]).columns   
+        # numeric_columns = numeric_columns.drop(["longitude", "latitude"])
+
+        filter_option = st.selectbox("Select Filter", numeric_columns, index=0)
         st.write(f"**Displaying {filter_option} on the map:**")
+        # Map style selection
+        map_style = st.sidebar.selectbox(
+            "Select Map Style",
+            options=["carto-positron", "carto-darkmatter", "open-street-map"]
+        )
+
+        selected_column = filter_option
+
+        fig = px.choropleth_mapbox(
+            gdf,
+            geojson=geojson_data,
+            locations=gdf.index,  # Use index to match geometry
+            color=selected_column,
+            hover_name="Name",
+            hover_data=["PLN_AREA_N", "REGION_N", selected_column],
+            title=f"{selected_column} Data by Location",
+            mapbox_style=map_style,
+            center={"lat": gdf.geometry.centroid.y.mean(), "lon": gdf.geometry.centroid.x.mean()},
+        )
+
+        st.plotly_chart(fig, use_container_width=True)
+
         # If you just want to show the map with pinned centroids
-        st.map(gdf.set_geometry("geometry").centroid)
+
+        fig2 = px.scatter_mapbox(
+            gdf,
+            lat="latitude",
+            lon="longitude",
+            size=selected_column,
+            color=selected_column,
+            hover_name="Name",
+            hover_data=["PLN_AREA_N", "REGION_N"],
+            title=f"{selected_column} Data by Location",
+            mapbox_style=map_style,
+        )
+        # Display the map
+        st.plotly_chart(fig2, use_container_width=True)
     except Exception as e:
         st.warning(
             f"Could not load or display GeoData. Check your file path or data format.\n\nError: {e}"
         )
+
+    
 
 
 def comparative_analysis_page():
