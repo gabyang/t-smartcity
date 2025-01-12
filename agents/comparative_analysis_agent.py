@@ -25,11 +25,12 @@ def serpapi_search(query: str, serpapi_api_key: str, num_results: int = 5):
         "hl": "en",
     }
     search = serpapi.search(params)
-    result = search.get_dict()
+    print(search)
+    #result = search.get_dict()
 
     # SerpApi returns a variety of different fields,
     # we focus on 'organic_results' (Google's standard results)
-    organic_results = result.get("organic_results", [])
+    organic_results = search.get("organic_results", [])
     results_list = []
 
     for item in organic_results[:num_results]:
@@ -78,8 +79,8 @@ def summarize_search_results(results: list, user_query: str) -> str:
         "And so on for 5 case studies"
     )
 
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
+    response = openai.chat.completions.create(
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_content},
@@ -88,7 +89,7 @@ def summarize_search_results(results: list, user_query: str) -> str:
         max_tokens=600,
     )
 
-    return response.choices[0].message['content'].strip()
+    return response.choices[0].message
 
 
 def generate_comparative_analysis(user_query: str) -> str:
@@ -104,5 +105,6 @@ def generate_comparative_analysis(user_query: str) -> str:
 
     # 2. Summarize them
     summary = summarize_search_results(results, user_query)
+    #summary = summary.content
 
-    return summary
+    return summary.content
