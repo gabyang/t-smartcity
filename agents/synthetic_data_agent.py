@@ -1,6 +1,6 @@
 import openai
 import re
-import os
+import subprocess
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -136,6 +136,27 @@ def build_code_generation_prompt(location: str, locale: str, columns: list):
     return prompt.strip()
 
 
+def run_synthetic_data_code(code_output: str) -> bytes:
+    """
+    1. Write the generated code to a temporary script.
+    2. Run that script to produce 'synthetic_data.csv'.
+    3. Return the CSV file content as bytes.
+    """
+
+    # Write the code to a temporary file
+    with open("generated_script.py", "w", encoding="utf-8") as f:
+        f.write(code_output)
+
+    # Execute the generated script
+    subprocess.run(["python", "generated_script.py"], check=True)
+
+    # Read the CSV file in binary
+    with open("synthetic_data.csv", "rb") as csv_file:
+        csv_data = csv_file.read()
+
+    return csv_data
+
+
 def generate_synthetic_data_code(user_query: str) -> str:
     location, data_type, purpose = parse_query(user_query)
     locale = get_locale_for_location(location)
@@ -145,12 +166,16 @@ def generate_synthetic_data_code(user_query: str) -> str:
     response = openai.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "You are a helpful assistant that generates Python code."},
-            {"role": "user", "content": prompt_for_code}
+            {
+                "role": "system",
+                "content": "You are a helpful assistant that generates Python code.",
+            },
+            {"role": "user", "content": prompt_for_code},
         ],
         max_tokens=700,
         temperature=0.2,
     )
 
     code_output = response.choices[0].message.content.strip()
-    return code_output
+    csv_data = run_synthetic_data_code(code_output)
+    return csv_data
