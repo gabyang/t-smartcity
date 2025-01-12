@@ -63,15 +63,19 @@ def summarize_search_results(results: list, user_query: str) -> str:
 
     system_prompt = (
         "You are a helpful research assistant. A user has performed a web search. "
-        "You have the following web search results. Summarize the key findings "
-        "and attempt to answer the user's query in a clear, concise way. If there is missing information, "
+        "You have the following web search results."
+        "You will attempt to answer the user's query in a clear, detailed manner. If there is missing information, "
         "just state that it wasn't found in the search results."
     )
 
     user_content = (
         f"User query: {user_query}\n"
         f"Search results:\n{combined_text_str}"
-        "\n\nPlease provide a helpful summary or answer."
+        "\n\nPlease provide a helpful answer. In this format: "
+        "Case study 1: ..."
+        "Key insights for case study and lessons learnt"
+        "Case study 2: ..."
+        "And so on for 5 case studies"
     )
 
     response = openai.chat.completions.create(
