@@ -147,15 +147,30 @@ def run_synthetic_data_code(code_output: str) -> bytes:
     # Write the code to a temporary file
     with open("generated_script.py", "w", encoding="utf-8") as f:
         f.write(code_output)
-
     # Execute the generated script
-    subprocess.run(["python", "generated_script.py"], check=True)
-
+    subprocess.run(["python", "generated_script.py"])
     # Read the CSV file in binary
     with open("synthetic_data.csv", "rb") as csv_file:
         csv_data = csv_file.read()
-
     return csv_data
+
+def remove_backticks(code_with_backticks):
+    """
+    Remove Markdown-style triple backticks from a given string.
+
+    Args:
+        code_with_backticks (str): The input string containing the code block.
+
+    Returns:
+        str: The cleaned code string without backticks.
+    """
+    # Check for triple backticks and remove them
+    if code_with_backticks.startswith("```") and code_with_backticks.endswith("```"):
+        # Remove the first and last triple backticks
+        code_with_backticks = code_with_backticks.strip('`')
+        code_with_backticks = code_with_backticks.split('\n', 1)[-1].rsplit('\n', 1)[0]
+
+    return code_with_backticks
 
 
 def generate_synthetic_data_code(user_query: str) -> str:
@@ -177,6 +192,9 @@ def generate_synthetic_data_code(user_query: str) -> str:
         temperature=0.2,
     )
 
+
     code_output = response.choices[0].message.content.strip()
-    csv_data = run_synthetic_data_code(code_output)
+    print("before csv file")
+    csv_data = run_synthetic_data_code(remove_backticks(code_output))
+    print("after csv file")
     return csv_data
