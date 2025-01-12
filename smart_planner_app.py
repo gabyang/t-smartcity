@@ -232,13 +232,30 @@ def map_visualization_page():
 
             # Convert the parsed data to a DataFrame and concatenate with the original GeoDataFrame
             dwellings_df = pd.DataFrame(dwellings_data.tolist())
+            dwellings["latitude"] = dwellings.geometry.centroid.y
+            dwellings["longitude"] = dwellings.geometry.centroid.x
             dwellings = pd.concat([dwellings, dwellings_df], axis=1)
             dwellings = dwellings.drop(columns=['Description'])
             return dwellings[:10000]
+        
+        @st.cache_data
+        def load_supermarkets_data():
+            supermarkets = gpd.read_file("data/SupermarketsGEOJSON.geojson")
+
+            # Apply the parsing function to the 'Description' column
+            supermarkets_data = supermarkets['Description'].apply(parse_description)
+
+            
+
+            supermarkets_df = pd.DataFrame(supermarkets_data.tolist())
+            supermarkets = pd.concat([supermarkets, supermarkets_df], axis=1)
+            supermarkets = supermarkets.drop(columns=['Description'])
+            return supermarkets
 
         with st.spinner("Loading data..."):
             gdf = load_data()
             dwellings = load_dwellings_data()
+            supermarkets = load_supermarkets_data()
             geojson_data = gdf.__geo_interface__
 
         numeric_columns = gdf.select_dtypes(include=[np.number]).columns
@@ -341,10 +358,27 @@ def map_visualization_page():
         )
 
         st.plotly_chart(fig5, use_container_width=True)
+
+        st.write("##### Supermarkets in Singapore")
+
+        fig6 = px.scatter_mapbox(
+            supermarkets,
+            lat=dwellings.geometry.centroid.y,
+            lon=dwellings.geometry.centroid.x,
+            # color="UNIT_NO",
+            # hover_data=["STR_NAME", "POSTALCODE", "REGION"],
+            title="Supermarkets in Singapore",
+            mapbox_style="carto-positron",
+        )
+
+        st.plotly_chart(fig6, use_container_width=True)
+
+        #display housing types in gdf
     except Exception as e:
         st.warning(
             f"Could not load or display GeoData. Check your file path or data format.\n\nError: {e}"
         )
+
 
 
 def comparative_analysis_page():
