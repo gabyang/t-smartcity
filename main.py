@@ -13,79 +13,104 @@ from langgraph.graph import END, StateGraph
 from langgraph.prebuilt.tool_executor import ToolExecutor, ToolInvocation
 
 import operator
-from typing import Annotated, List, Sequence, Tuple, TypedDict, Union
-
+from typing import Annotated, List, Sequence, Tuple, TypedDict
 from langchain.agents import create_openai_functions_agent
 from langchain.tools.render import format_tool_to_openai_function
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import ChatOpenAI
-from typing_extensions import TypedDict
+from langchain_core.tools import tool
+from langchain_experimental.utilities import PythonREPL
 import os
 import json
 import re
-from langchain_core.tools import tool
-from langchain_community.tools.tavily_search import TavilySearchResults
-from langchain_core.tools import tool
-from langchain_community.tools.tavily_search import TavilySearchResults
-from langchain_experimental.utilities import PythonREPL
-from typing import Annotated
-
-from langchain_openai import ChatOpenAI
-
-from langchain_core.messages import (
-    AIMessage,
-    BaseMessage,
-    ChatMessage,
-    FunctionMessage,
-    HumanMessage,
-)
-from langchain_core.utils.function_calling import convert_to_openai_function
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langgraph.graph import END, StateGraph
-from langgraph.prebuilt.tool_executor import ToolExecutor, ToolInvocation
-
 import functools
 
-os.environ['TAVILY_API_KEY'] = "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"
+# Load environment variables
+load_dotenv()
+os.environ['TAVILY_API_KEY'] = ""
+client = OpenAI(api_key=os.getenv(""))
 
-client = OpenAI(api_key="")
-tavily_tool = TavilySearchResults(max_results=5)
+# Tools for the agents
+@tool
+def process_json_arrays(file1: str, file2: str):
+    """
+    Extract and process data from two JSON files containing arrays of objects.
+
+    Parameters:
+    - file1: Path to the first JSON file.
+    - file2: Path to the second JSON file.
+
+    Returns:
+    - A combined or comparative result based on the JSON arrays.
+    """
+    try:
+        with open(file1, 'r') as f1, open(file2, 'r') as f2:
+            data1 = json.load(f1)
+            data2 = json.load(f2)
+
+        if not isinstance(data1, list) or not isinstance(data2, list):
+            return "Both files must contain an array of JSON objects."
+
+        combined = data1 + data2
+        keys1 = {key for obj in data1 for key in obj.keys()}
+        keys2 = {key for obj in data2 for key in obj.keys()}
+        common_keys = keys1.intersection(keys2)
+
+        summary = {
+            "File1_Count": len(data1),
+            "File2_Count": len(data2),
+            "Combined_Count": len(combined),
+            "Common_Keys": list(common_keys),
+            "First_File_Example": data1[0] if data1 else None,
+            "Second_File_Example": data2[0] if data2 else None,
+        }
+        return summary
+    except Exception as e:
+        return f"Error processing JSON arrays: {repr(e)}"
 
 @tool
-def python_repl(code: Annotated[str, "The python code to execute to generate your chart."]):
-    """Use this to execute python code. If you want to see the output of a value, you should print it out with `print(...)`. This is visible to the user."""
+def analyze_json_array(extracted_data: Annotated[str, "The extracted JSON data to analyze for insights."]):
+    """
+    Analyze the extracted JSON data and provide insights.
+
+    Parameters:
+    - extracted_data: A stringified JSON object containing the processed data.
+
+    Returns:
+    - Insights derived from the data.
+    """
     try:
-        result = repl.run(code)
-    except BaseException as e:
-        return f"Failed to execute. Error: {repr(e)}"
-    return f"Succesfully executed:\\\\n`python\\\\\\\\n{code}\\\\\\\\n`\\\\nStdout: {result}"
+        data = json.loads(extracted_data)
+        insights = {
+            "File1_Count": data.get("File1_Count", 0),
+            "File2_Count": data.get("File2_Count", 0),
+            "Common_Keys": data.get("Common_Keys", []),
+            "Summary": f"File 1 contains {data.get('File1_Count', 0)} items, "
+                       f"File 2 contains {data.get('File2_Count', 0)} items, "
+                       f"and they share {len(data.get('Common_Keys', []))} common keys."
+        }
+        return insights
+    except Exception as e:
+        return f"Failed to analyze data: {repr(e)}"
 
-load_dotenv()
+# Python REPL tool
 repl = PythonREPL()
-tools = [tavily_tool, python_repl]
 
-# This defines the object that is passed between each node
-# in the graph. We will create different nodes for each agent and tool
+# Tool list
+tools = [process_json_arrays, analyze_json_array]
+
+# Agent state definition
 class AgentState(TypedDict):
     messages: Annotated[Sequence[BaseMessage], operator.add]
     sender: str
 
-
+# Tool executor
 tool_executor = ToolExecutor(tools)
 
-
+# Node function for tool execution
 def tool_node(state):
-    """This runs tools in the graph
-    It takes in an agent action and calls that tool and returns the result."""
     messages = state["messages"]
-    # Based on the continue condition
-    # we know the last message involves a function call
     last_message = messages[-1]
-    # We construct an ToolInvocation from the function_call
-    tool_input = json.loads(
-        last_message.additional_kwargs["function_call"]["arguments"]
-    )
-    # We can pass single-arg inputs by value
+    tool_input = json.loads(last_message.additional_kwargs["function_call"]["arguments"])
     if len(tool_input) == 1 and "__arg1" in tool_input:
         tool_input = next(iter(tool_input.values()))
     tool_name = last_message.additional_kwargs["function_call"]["name"]
@@ -93,36 +118,30 @@ def tool_node(state):
         tool=tool_name,
         tool_input=tool_input,
     )
-    # We call the tool_executor and get back a response
     response = tool_executor.invoke(action)
-    # We use the response to create a FunctionMessage
     function_message = FunctionMessage(
         content=f"{tool_name} response: {str(response)}", name=action.tool
     )
-    # We return a list, because this will get added to the existing list
     return {"messages": [function_message]}
 
+# Name sanitizer
 def sanitize_name(name):
-    """Sanitize a name to match the required pattern."""
     return re.sub(r'[^a-zA-Z0-9_-]', '_', name)
 
-# Either agent can decide to end
+# Routing function
 def router(state):
-    # This is the router
     messages = state["messages"]
     last_message = messages[-1]
     if "function_call" in last_message.additional_kwargs:
-        # The previus agent is invoking a tool
         return "call_tool"
     if "FINAL ANSWER" in last_message.content:
-        # Any agent decided the work is done
         return "end"
     return "continue"
 
+# Agent creator
 llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def create_agent(llm, tools, system_message: str):
-    """Create an agent."""
     functions = [convert_to_openai_function(t) for t in tools]
     prompt = ChatPromptTemplate.from_messages(
         [
@@ -130,8 +149,6 @@ def create_agent(llm, tools, system_message: str):
                 "system",
                 "You are a helpful AI assistant, collaborating with other assistants."
                 " Use the provided tools to progress towards answering the question."
-                " If you are unable to fully answer, that's OK, another assistant with different tools "
-                " will help where you left off. Execute what you can to make progress."
                 " If you or any of the other assistants have the final answer or deliverable,"
                 " prefix your response with FINAL ANSWER so the team knows to stop."
                 " You have access to the following tools: {tool_names}.\\\\n{system_message}",
@@ -143,95 +160,62 @@ def create_agent(llm, tools, system_message: str):
     prompt = prompt.partial(tool_names=", ".join([tool.name for tool in tools]))
     return prompt | llm.bind_functions(functions)
 
-# Helper function to create a node for a given agent
-def agent_node(state, agent, name):
-    result = agent.invoke(state)
-    # We convert the agent output into a format that is suitable to append to the global state
-    if isinstance(result, FunctionMessage):
-        pass
-    else:
-        print("before result")
-        result = HumanMessage(**result.dict(exclude={"type", "name"}), name=sanitize_name(name))
-        print("after result")
-    return {
-        "messages": [result],
-        # Since we have a strict workflow, we can
-        # track the sender so we know who to pass to next.
-        "sender": name,
-    }
-
-research_agent= create_agent(
+# Agents
+data_extractor_agent = create_agent(
     llm,
-    [tavily_tool],
-    system_message="You should provide accurate data for the chart generator to use.",
+    [process_json_arrays],
+    system_message="You should extract data from the two files for the Data Analyst agent to use."
 )
 
-chart_agent= create_agent(
+data_analyst_agent = create_agent(
     llm,
-    [python_repl],
-    system_message="Any charts you display will be visible by the user.",
+    [analyze_json_array],
+    system_message="You should analyze the extracted data and draw insights to be shown to the user."
 )
 
+# Nodes
+extractor_node = functools.partial(agent_node, agent=data_extractor_agent, name="Data Extractor")
+analyst_node = functools.partial(agent_node, agent=data_analyst_agent, name="Data Analyst")
 
-research_node= functools.partial(agent_node, agent=research_agent, name="Researcher")
-chart_node= functools.partial(agent_node, agent=chart_agent, name="Chart Generator")
+# Workflow
+workflow = StateGraph(AgentState)
 
-workflow= StateGraph(AgentState)
-
-workflow.add_node("Researcher", research_node)
-workflow.add_node("Chart Generator", chart_node)
+workflow.add_node("Data Extractor", extractor_node)
+workflow.add_node("Data Analyst", analyst_node)
 workflow.add_node("call_tool", tool_node)
+
 workflow.add_conditional_edges(
-    "Researcher",
+    "Data Extractor",
     router,
-    {"continue": "Chart Generator", "call_tool": "call_tool", "end": END},
+    {"continue": "Data Analyst", "call_tool": "call_tool", "end": END},
 )
 workflow.add_conditional_edges(
-    "Chart Generator",
+    "Data Analyst",
     router,
-    {"continue": "Researcher", "call_tool": "call_tool", "end": END},
+    {"continue": "Data Extractor", "call_tool": "call_tool", "end": END},
 )
 workflow.add_conditional_edges(
     "call_tool",
-# Each agent node updates the 'sender' field# the tool calling node does not, meaning
-# this edge will route back to the original agent# who invoked the tool
-		lambda x: x["sender"],
+    lambda x: x["sender"],
     {
-        "Researcher": "Researcher",
-        "Chart Generator": "Chart Generator",
+        "Data Extractor": "Data Extractor",
+        "Data Analyst": "Data Analyst",
     },
 )
-workflow.set_entry_point("Researcher")
-graph= workflow.compile()
 
+workflow.set_entry_point("Data Extractor")
+graph = workflow.compile()
+
+# Execution
 for s in graph.stream(
     {
         "messages": [
             HumanMessage(
-                content="Fetch the Malaysia's GDP over the past 5 years,"
-                " then draw a line graph of it."
-                " Once you code it up, finish."
+                content="Give me some data insights from the two JSON files."
             )
         ],
     },
-    # Maximum number of steps to take in the graph
     {"recursion_limit": 150},
 ):
     print(s)
     print("----")
-
-
-
-
-# completion = client.chat.completions.create(
-#     model="gpt-4o-mini",
-#     messages=[
-#         {"role": "system", "content": "You are a helpful assistant."},
-#         {
-#             "role": "user",
-#             "content": "Write a haiku about recursion in programming."
-#         }
-#     ]
-# )
-
-# print(completion.choices[0].message)

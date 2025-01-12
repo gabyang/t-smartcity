@@ -1,0 +1,1622 @@
+[
+    {
+        "Subzone_Name": "ALJUNIED",
+        "Park_Count": "3.0",
+        "Garden_Count": "24.0",
+        "Total_Count": "27.0"
+    },
+    {
+        "Subzone_Name": "ANAK BUKIT",
+        "Park_Count": "9.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "17.0"
+    },
+    {
+        "Subzone_Name": "BALESTIER",
+        "Park_Count": "2.0",
+        "Garden_Count": "16.0",
+        "Total_Count": "18.0"
+    },
+    {
+        "Subzone_Name": "BAYSHORE",
+        "Park_Count": "2.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "BEDOK NORTH",
+        "Park_Count": "4.0",
+        "Garden_Count": "42.0",
+        "Total_Count": "46.0"
+    },
+    {
+        "Subzone_Name": "BEDOK RESERVOIR",
+        "Park_Count": "2.0",
+        "Garden_Count": "9.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "BEDOK SOUTH",
+        "Park_Count": "16.0",
+        "Garden_Count": "44.0",
+        "Total_Count": "60.0"
+    },
+    {
+        "Subzone_Name": "BENDEMEER",
+        "Park_Count": "4.0",
+        "Garden_Count": "19.0",
+        "Total_Count": "23.0"
+    },
+    {
+        "Subzone_Name": "BIDADARI",
+        "Park_Count": "2.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "BISHAN EAST",
+        "Park_Count": "1.0",
+        "Garden_Count": "17.0",
+        "Total_Count": "18.0"
+    },
+    {
+        "Subzone_Name": "BOAT QUAY",
+        "Park_Count": "1.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "BRAS BASAH",
+        "Park_Count": "2.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "BUKIT BATOK SOUTH",
+        "Park_Count": "1.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "BUKIT HO SWEE",
+        "Park_Count": "1.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "CENTRAL WATER CATCHMENT",
+        "Park_Count": "6.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "CHANGI AIRPORT",
+        "Park_Count": "1.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "CHANGI POINT",
+        "Park_Count": "6.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "CHENG SAN",
+        "Park_Count": "1.0",
+        "Garden_Count": "10.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "CHINATOWN",
+        "Park_Count": "4.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "9.0"
+    },
+    {
+        "Subzone_Name": "CHOA CHU KANG CENTRAL",
+        "Park_Count": "1.0",
+        "Garden_Count": "10.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "CHOA CHU KANG NORTH",
+        "Park_Count": "1.0",
+        "Garden_Count": "15.0",
+        "Total_Count": "16.0"
+    },
+    {
+        "Subzone_Name": "CITY HALL",
+        "Park_Count": "5.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "CLEMENTI CENTRAL",
+        "Park_Count": "3.0",
+        "Garden_Count": "7.0",
+        "Total_Count": "10.0"
+    },
+    {
+        "Subzone_Name": "CLEMENTI WOODS",
+        "Park_Count": "1.0",
+        "Garden_Count": "11.0",
+        "Total_Count": "12.0"
+    },
+    {
+        "Subzone_Name": "CLIFFORD PIER",
+        "Park_Count": "1.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "CONEY ISLAND",
+        "Park_Count": "1.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "CORONATION ROAD",
+        "Park_Count": "3.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "7.0"
+    },
+    {
+        "Subzone_Name": "CRAWFORD",
+        "Park_Count": "2.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "DAIRY FARM",
+        "Park_Count": "6.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "DHOBY GHAUT",
+        "Park_Count": "3.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "DUNEARN",
+        "Park_Count": "2.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "EAST COAST",
+        "Park_Count": "2.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "FABER",
+        "Park_Count": "3.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "FARRER COURT",
+        "Park_Count": "1.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "FERNVALE",
+        "Park_Count": "6.0",
+        "Garden_Count": "17.0",
+        "Total_Count": "23.0"
+    },
+    {
+        "Subzone_Name": "FLORA DRIVE",
+        "Park_Count": "3.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "7.0"
+    },
+    {
+        "Subzone_Name": "FORT CANNING",
+        "Park_Count": "4.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "FRANKEL",
+        "Park_Count": "14.0",
+        "Garden_Count": "27.0",
+        "Total_Count": "41.0"
+    },
+    {
+        "Subzone_Name": "GALI BATU",
+        "Park_Count": "1.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "GEYLANG EAST",
+        "Park_Count": "8.0",
+        "Garden_Count": "20.0",
+        "Total_Count": "28.0"
+    },
+    {
+        "Subzone_Name": "GOMBAK",
+        "Park_Count": "4.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "GREENWOOD PARK",
+        "Park_Count": "1.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "GUILIN",
+        "Park_Count": "1.0",
+        "Garden_Count": "10.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "HENDERSON HILL",
+        "Park_Count": "1.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "HILLCREST",
+        "Park_Count": "5.0",
+        "Garden_Count": "7.0",
+        "Total_Count": "12.0"
+    },
+    {
+        "Subzone_Name": "HILLVIEW",
+        "Park_Count": "6.0",
+        "Garden_Count": "6.0",
+        "Total_Count": "12.0"
+    },
+    {
+        "Subzone_Name": "HOLLAND DRIVE",
+        "Park_Count": "1.0",
+        "Garden_Count": "6.0",
+        "Total_Count": "7.0"
+    },
+    {
+        "Subzone_Name": "HOLLAND ROAD",
+        "Park_Count": "5.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "9.0"
+    },
+    {
+        "Subzone_Name": "HOUGANG CENTRAL",
+        "Park_Count": "2.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "HOUGANG EAST",
+        "Park_Count": "1.0",
+        "Garden_Count": "9.0",
+        "Total_Count": "10.0"
+    },
+    {
+        "Subzone_Name": "INSTITUTION HILL",
+        "Park_Count": "1.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "ISTANA NEGARA",
+        "Park_Count": "1.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "JELEBU",
+        "Park_Count": "3.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "JOO SENG",
+        "Park_Count": "2.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "KAKI BUKIT",
+        "Park_Count": "1.0",
+        "Garden_Count": "11.0",
+        "Total_Count": "12.0"
+    },
+    {
+        "Subzone_Name": "KAMPONG BUGIS",
+        "Park_Count": "1.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "KAMPONG JAVA",
+        "Park_Count": "2.0",
+        "Garden_Count": "12.0",
+        "Total_Count": "14.0"
+    },
+    {
+        "Subzone_Name": "KAMPONG TIONG BAHRU",
+        "Park_Count": "1.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "KATONG",
+        "Park_Count": "2.0",
+        "Garden_Count": "9.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "KEBUN BAHRU",
+        "Park_Count": "3.0",
+        "Garden_Count": "9.0",
+        "Total_Count": "12.0"
+    },
+    {
+        "Subzone_Name": "KEMBANGAN",
+        "Park_Count": "16.0",
+        "Garden_Count": "18.0",
+        "Total_Count": "34.0"
+    },
+    {
+        "Subzone_Name": "KENT RIDGE",
+        "Park_Count": "3.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "KIAN TECK",
+        "Park_Count": "1.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "KOVAN",
+        "Park_Count": "5.0",
+        "Garden_Count": "12.0",
+        "Total_Count": "17.0"
+    },
+    {
+        "Subzone_Name": "LAKESIDE (LEISURE)",
+        "Park_Count": "2.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "LAVENDER",
+        "Park_Count": "2.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "LEEDON PARK",
+        "Park_Count": "2.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "LIM CHU KANG",
+        "Park_Count": "5.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "LITTLE INDIA",
+        "Park_Count": "1.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "LORONG AH SOO",
+        "Park_Count": "3.0",
+        "Garden_Count": "17.0",
+        "Total_Count": "20.0"
+    },
+    {
+        "Subzone_Name": "LORONG CHUAN",
+        "Park_Count": "5.0",
+        "Garden_Count": "6.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "LOWER SELETAR",
+        "Park_Count": "1.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "5.0"
+    },
+    {
+        "Subzone_Name": "LOYANG EAST",
+        "Park_Count": "2.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "MACPHERSON",
+        "Park_Count": "2.0",
+        "Garden_Count": "10.0",
+        "Total_Count": "12.0"
+    },
+    {
+        "Subzone_Name": "MALCOLM",
+        "Park_Count": "2.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "MANDAI EAST",
+        "Park_Count": "1.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "MANDAI ESTATE",
+        "Park_Count": "2.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "MARINA CENTRE",
+        "Park_Count": "1.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "MARINA EAST",
+        "Park_Count": "1.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "MARITIME SQUARE",
+        "Park_Count": "4.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "9.0"
+    },
+    {
+        "Subzone_Name": "MARYMOUNT",
+        "Park_Count": "5.0",
+        "Garden_Count": "9.0",
+        "Total_Count": "14.0"
+    },
+    {
+        "Subzone_Name": "MAXWELL",
+        "Park_Count": "1.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "MOULMEIN",
+        "Park_Count": "3.0",
+        "Garden_Count": "9.0",
+        "Total_Count": "12.0"
+    },
+    {
+        "Subzone_Name": "MOUNTBATTEN",
+        "Park_Count": "5.0",
+        "Garden_Count": "11.0",
+        "Total_Count": "16.0"
+    },
+    {
+        "Subzone_Name": "NATURE RESERVE",
+        "Park_Count": "5.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "7.0"
+    },
+    {
+        "Subzone_Name": "NEE SOON",
+        "Park_Count": "1.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "NORTH COAST",
+        "Park_Count": "1.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "NORTH-EASTERN ISLANDS",
+        "Park_Count": "3.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "NORTHLAND",
+        "Park_Count": "1.0",
+        "Garden_Count": "7.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "ONE NORTH",
+        "Park_Count": "1.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "PASIR PANJANG 2",
+        "Park_Count": "2.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "PASIR RIS CENTRAL",
+        "Park_Count": "2.0",
+        "Garden_Count": "9.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "PASIR RIS PARK",
+        "Park_Count": "1.0",
+        "Garden_Count": "6.0",
+        "Total_Count": "7.0"
+    },
+    {
+        "Subzone_Name": "PASIR RIS WEST",
+        "Park_Count": "1.0",
+        "Garden_Count": "15.0",
+        "Total_Count": "16.0"
+    },
+    {
+        "Subzone_Name": "PEARL'S HILL",
+        "Park_Count": "1.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "PORT",
+        "Park_Count": "2.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "PUNGGOL TOWN CENTRE",
+        "Park_Count": "1.0",
+        "Garden_Count": "10.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "RAFFLES PLACE",
+        "Park_Count": "3.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "RESERVOIR VIEW",
+        "Park_Count": "2.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "RIDOUT",
+        "Park_Count": "1.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "5.0"
+    },
+    {
+        "Subzone_Name": "RIVERVALE",
+        "Park_Count": "1.0",
+        "Garden_Count": "18.0",
+        "Total_Count": "19.0"
+    },
+    {
+        "Subzone_Name": "SELETAR AEROSPACE PARK",
+        "Park_Count": "1.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "SELETAR HILLS",
+        "Park_Count": "17.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "25.0"
+    },
+    {
+        "Subzone_Name": "SEMBAWANG CENTRAL",
+        "Park_Count": "1.0",
+        "Garden_Count": "6.0",
+        "Total_Count": "7.0"
+    },
+    {
+        "Subzone_Name": "SEMBAWANG EAST",
+        "Park_Count": "1.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "9.0"
+    },
+    {
+        "Subzone_Name": "SEMBAWANG HILLS",
+        "Park_Count": "7.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "SEMBAWANG SPRINGS",
+        "Park_Count": "4.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "SEMBAWANG STRAITS",
+        "Park_Count": "4.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "7.0"
+    },
+    {
+        "Subzone_Name": "SENNETT",
+        "Park_Count": "5.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "13.0"
+    },
+    {
+        "Subzone_Name": "SERANGOON CENTRAL",
+        "Park_Count": "2.0",
+        "Garden_Count": "10.0",
+        "Total_Count": "12.0"
+    },
+    {
+        "Subzone_Name": "SERANGOON GARDEN",
+        "Park_Count": "9.0",
+        "Garden_Count": "26.0",
+        "Total_Count": "35.0"
+    },
+    {
+        "Subzone_Name": "SIGLAP",
+        "Park_Count": "3.0",
+        "Garden_Count": "6.0",
+        "Total_Count": "9.0"
+    },
+    {
+        "Subzone_Name": "SIMEI",
+        "Park_Count": "8.0",
+        "Garden_Count": "25.0",
+        "Total_Count": "33.0"
+    },
+    {
+        "Subzone_Name": "SOMERSET",
+        "Park_Count": "2.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "SPRINGLEAF",
+        "Park_Count": "6.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "SUNSET WAY",
+        "Park_Count": "3.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "SWISS CLUB",
+        "Park_Count": "4.0",
+        "Garden_Count": "6.0",
+        "Total_Count": "10.0"
+    },
+    {
+        "Subzone_Name": "TAGORE",
+        "Park_Count": "12.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "13.0"
+    },
+    {
+        "Subzone_Name": "TAI SENG",
+        "Park_Count": "5.0",
+        "Garden_Count": "13.0",
+        "Total_Count": "18.0"
+    },
+    {
+        "Subzone_Name": "TAMAN JURONG",
+        "Park_Count": "2.0",
+        "Garden_Count": "20.0",
+        "Total_Count": "22.0"
+    },
+    {
+        "Subzone_Name": "TAMPINES EAST",
+        "Park_Count": "1.0",
+        "Garden_Count": "45.0",
+        "Total_Count": "46.0"
+    },
+    {
+        "Subzone_Name": "TAMPINES NORTH",
+        "Park_Count": "2.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "TANJONG PAGAR",
+        "Park_Count": "1.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "TEBAN GARDENS",
+        "Park_Count": "1.0",
+        "Garden_Count": "9.0",
+        "Total_Count": "10.0"
+    },
+    {
+        "Subzone_Name": "TELOK BLANGAH DRIVE",
+        "Park_Count": "1.0",
+        "Garden_Count": "9.0",
+        "Total_Count": "10.0"
+    },
+    {
+        "Subzone_Name": "TIONG BAHRU",
+        "Park_Count": "1.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "TOA PAYOH CENTRAL",
+        "Park_Count": "1.0",
+        "Garden_Count": "10.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "TRAFALGAR",
+        "Park_Count": "1.0",
+        "Garden_Count": "18.0",
+        "Total_Count": "19.0"
+    },
+    {
+        "Subzone_Name": "TURF CLUB",
+        "Park_Count": "1.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "TYERSALL",
+        "Park_Count": "4.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "5.0"
+    },
+    {
+        "Subzone_Name": "ULU PANDAN",
+        "Park_Count": "6.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "UPPER PAYA LEBAR",
+        "Park_Count": "3.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "UPPER THOMSON",
+        "Park_Count": "12.0",
+        "Garden_Count": "14.0",
+        "Total_Count": "26.0"
+    },
+    {
+        "Subzone_Name": "WEST COAST",
+        "Park_Count": "2.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "5.0"
+    },
+    {
+        "Subzone_Name": "WOODLANDS SOUTH",
+        "Park_Count": "1.0",
+        "Garden_Count": "11.0",
+        "Total_Count": "12.0"
+    },
+    {
+        "Subzone_Name": "WOODLANDS WEST",
+        "Park_Count": "2.0",
+        "Garden_Count": "12.0",
+        "Total_Count": "14.0"
+    },
+    {
+        "Subzone_Name": "WOODLEIGH",
+        "Park_Count": "1.0",
+        "Garden_Count": "0.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "XILIN",
+        "Park_Count": "2.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "YIO CHU KANG EAST",
+        "Park_Count": "7.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "10.0"
+    },
+    {
+        "Subzone_Name": "YIO CHU KANG WEST",
+        "Park_Count": "1.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "5.0"
+    },
+    {
+        "Subzone_Name": "YISHUN CENTRAL",
+        "Park_Count": "1.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "YISHUN SOUTH",
+        "Park_Count": "1.0",
+        "Garden_Count": "9.0",
+        "Total_Count": "10.0"
+    },
+    {
+        "Subzone_Name": "YUNNAN",
+        "Park_Count": "3.0",
+        "Garden_Count": "28.0",
+        "Total_Count": "31.0"
+    },
+    {
+        "Subzone_Name": "ADMIRALTY",
+        "Park_Count": "0.0",
+        "Garden_Count": "6.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "ALEXANDRA HILL",
+        "Park_Count": "0.0",
+        "Garden_Count": "6.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "ALEXANDRA NORTH",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "ANCHORVALE",
+        "Park_Count": "0.0",
+        "Garden_Count": "18.0",
+        "Total_Count": "18.0"
+    },
+    {
+        "Subzone_Name": "ANG MO KIO TOWN CENTRE",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "BANGKIT",
+        "Park_Count": "0.0",
+        "Garden_Count": "15.0",
+        "Total_Count": "15.0"
+    },
+    {
+        "Subzone_Name": "BENCOOLEN",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "BENOI SECTOR",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "BOON KENG",
+        "Park_Count": "0.0",
+        "Garden_Count": "7.0",
+        "Total_Count": "7.0"
+    },
+    {
+        "Subzone_Name": "BOON LAY PLACE",
+        "Park_Count": "0.0",
+        "Garden_Count": "27.0",
+        "Total_Count": "27.0"
+    },
+    {
+        "Subzone_Name": "BOON TECK",
+        "Park_Count": "0.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "BOULEVARD",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "BRADDELL",
+        "Park_Count": "0.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "5.0"
+    },
+    {
+        "Subzone_Name": "BRICKWORKS",
+        "Park_Count": "0.0",
+        "Garden_Count": "7.0",
+        "Total_Count": "7.0"
+    },
+    {
+        "Subzone_Name": "BUGIS",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "BUKIT BATOK CENTRAL",
+        "Park_Count": "0.0",
+        "Garden_Count": "16.0",
+        "Total_Count": "16.0"
+    },
+    {
+        "Subzone_Name": "BUKIT BATOK EAST",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "BUKIT BATOK WEST",
+        "Park_Count": "0.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "CAIRNHILL",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "CECIL",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "CENTRAL SUBZONE",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "CHANGI WEST",
+        "Park_Count": "0.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "CHIN BEE",
+        "Park_Count": "0.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "5.0"
+    },
+    {
+        "Subzone_Name": "CHONG BOON",
+        "Park_Count": "0.0",
+        "Garden_Count": "6.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "CITY TERMINALS",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "CLARKE QUAY",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "CLEMENTI NORTH",
+        "Park_Count": "0.0",
+        "Garden_Count": "11.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "CLEMENTI WEST",
+        "Park_Count": "0.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "COMMONWEALTH",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "COMPASSVALE",
+        "Park_Count": "0.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "DEPOT ROAD",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "DOVER",
+        "Park_Count": "0.0",
+        "Garden_Count": "11.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "EVERTON PARK",
+        "Park_Count": "0.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "FAJAR",
+        "Park_Count": "0.0",
+        "Garden_Count": "19.0",
+        "Total_Count": "19.0"
+    },
+    {
+        "Subzone_Name": "FARRER PARK",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "GEYLANG BAHRU",
+        "Park_Count": "0.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "5.0"
+    },
+    {
+        "Subzone_Name": "GHIM MOH",
+        "Park_Count": "0.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "GOODWOOD PARK",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "GUL BASIN",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "HONG KAH",
+        "Park_Count": "0.0",
+        "Garden_Count": "31.0",
+        "Total_Count": "31.0"
+    },
+    {
+        "Subzone_Name": "HONG KAH NORTH",
+        "Park_Count": "0.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "HOUGANG WEST",
+        "Park_Count": "0.0",
+        "Garden_Count": "14.0",
+        "Total_Count": "14.0"
+    },
+    {
+        "Subzone_Name": "INTERNATIONAL BUSINESS PARK",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "JURONG GATEWAY",
+        "Park_Count": "0.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "5.0"
+    },
+    {
+        "Subzone_Name": "JURONG ISLAND AND BUKOM",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "JURONG RIVER",
+        "Park_Count": "0.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "JURONG WEST CENTRAL",
+        "Park_Count": "0.0",
+        "Garden_Count": "18.0",
+        "Total_Count": "18.0"
+    },
+    {
+        "Subzone_Name": "KALLANG BAHRU",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "KAMPONG UBI",
+        "Park_Count": "0.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "KANGKAR",
+        "Park_Count": "0.0",
+        "Garden_Count": "11.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "KEAT HONG",
+        "Park_Count": "0.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "KHATIB",
+        "Park_Count": "0.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "5.0"
+    },
+    {
+        "Subzone_Name": "KIM KEAT",
+        "Park_Count": "0.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "KRANJI",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "LEONIE HILL",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "LIU FANG",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "LORONG 8 TOA PAYOH",
+        "Park_Count": "0.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "LOYANG WEST",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "MARGARET DRIVE",
+        "Park_Count": "0.0",
+        "Garden_Count": "12.0",
+        "Total_Count": "12.0"
+    },
+    {
+        "Subzone_Name": "MARINE PARADE",
+        "Park_Count": "0.0",
+        "Garden_Count": "10.0",
+        "Total_Count": "10.0"
+    },
+    {
+        "Subzone_Name": "MATILDA",
+        "Park_Count": "0.0",
+        "Garden_Count": "11.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "MEI CHIN",
+        "Park_Count": "0.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "MIDVIEW",
+        "Park_Count": "0.0",
+        "Garden_Count": "9.0",
+        "Total_Count": "9.0"
+    },
+    {
+        "Subzone_Name": "MONK'S HILL",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "MOUNT EMILY",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "MOUNT PLEASANT",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "MURAI",
+        "Park_Count": "0.0",
+        "Garden_Count": "7.0",
+        "Total_Count": "7.0"
+    },
+    {
+        "Subzone_Name": "NASSIM",
+        "Park_Count": "0.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "NATIONAL UNIVERSITY OF S'PORE",
+        "Park_Count": "0.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "NEWTON CIRCUS",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "NICOLL",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "NORTHSHORE",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "ORANGE GROVE",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "OXLEY",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "PASIR PANJANG 1",
+        "Park_Count": "0.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "5.0"
+    },
+    {
+        "Subzone_Name": "PASIR RIS DRIVE",
+        "Park_Count": "0.0",
+        "Garden_Count": "15.0",
+        "Total_Count": "15.0"
+    },
+    {
+        "Subzone_Name": "PASIR RIS WAFER FAB PARK",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "PEI CHUN",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "PENG SIANG",
+        "Park_Count": "0.0",
+        "Garden_Count": "11.0",
+        "Total_Count": "11.0"
+    },
+    {
+        "Subzone_Name": "POTONG PASIR",
+        "Park_Count": "0.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "PUNGGOL FIELD",
+        "Park_Count": "0.0",
+        "Garden_Count": "22.0",
+        "Total_Count": "22.0"
+    },
+    {
+        "Subzone_Name": "QUEENSWAY",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "REDHILL",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "ROBERTSON QUAY",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "ROCHOR CANAL",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "SAFTI",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "SAMULUN",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "SAUJANA",
+        "Park_Count": "0.0",
+        "Garden_Count": "7.0",
+        "Total_Count": "7.0"
+    },
+    {
+        "Subzone_Name": "SELETAR",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "SEMBAWANG NORTH",
+        "Park_Count": "0.0",
+        "Garden_Count": "9.0",
+        "Total_Count": "9.0"
+    },
+    {
+        "Subzone_Name": "SENGKANG TOWN CENTRE",
+        "Park_Count": "0.0",
+        "Garden_Count": "19.0",
+        "Total_Count": "19.0"
+    },
+    {
+        "Subzone_Name": "SENJA",
+        "Park_Count": "0.0",
+        "Garden_Count": "5.0",
+        "Total_Count": "5.0"
+    },
+    {
+        "Subzone_Name": "SENOKO SOUTH",
+        "Park_Count": "0.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "SENTOSA",
+        "Park_Count": "0.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "SERANGOON NORTH",
+        "Park_Count": "0.0",
+        "Garden_Count": "9.0",
+        "Total_Count": "9.0"
+    },
+    {
+        "Subzone_Name": "SERANGOON NORTH IND ESTATE",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "SHANGRI-LA",
+        "Park_Count": "0.0",
+        "Garden_Count": "10.0",
+        "Total_Count": "10.0"
+    },
+    {
+        "Subzone_Name": "SINGAPORE GENERAL HOSPITAL",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "SINGAPORE POLYTECHNIC",
+        "Park_Count": "0.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "SUNGEI ROAD",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "TAMPINES WEST",
+        "Park_Count": "0.0",
+        "Garden_Count": "36.0",
+        "Total_Count": "36.0"
+    },
+    {
+        "Subzone_Name": "TANGLIN",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "TANGLIN HALT",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "TANJONG RHU",
+        "Park_Count": "0.0",
+        "Garden_Count": "6.0",
+        "Total_Count": "6.0"
+    },
+    {
+        "Subzone_Name": "TECK WHYE",
+        "Park_Count": "0.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "TELOK BLANGAH RISE",
+        "Park_Count": "0.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "TELOK BLANGAH WAY",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "TENGAH INDUSTRIAL ESTATE",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "TIONG BAHRU STATION",
+        "Park_Count": "0.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "TOA PAYOH WEST",
+        "Park_Count": "0.0",
+        "Garden_Count": "7.0",
+        "Total_Count": "7.0"
+    },
+    {
+        "Subzone_Name": "TOH GUAN",
+        "Park_Count": "0.0",
+        "Garden_Count": "4.0",
+        "Total_Count": "4.0"
+    },
+    {
+        "Subzone_Name": "TOWNSVILLE",
+        "Park_Count": "0.0",
+        "Garden_Count": "10.0",
+        "Total_Count": "10.0"
+    },
+    {
+        "Subzone_Name": "TUAS NORTH",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "TUAS PROMENADE",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "TUAS VIEW",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "TUAS VIEW EXTENSION",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "VICTORIA",
+        "Park_Count": "0.0",
+        "Garden_Count": "1.0",
+        "Total_Count": "1.0"
+    },
+    {
+        "Subzone_Name": "WATERWAY EAST",
+        "Park_Count": "0.0",
+        "Garden_Count": "13.0",
+        "Total_Count": "13.0"
+    },
+    {
+        "Subzone_Name": "WENYA",
+        "Park_Count": "0.0",
+        "Garden_Count": "3.0",
+        "Total_Count": "3.0"
+    },
+    {
+        "Subzone_Name": "WOODGROVE",
+        "Park_Count": "0.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "8.0"
+    },
+    {
+        "Subzone_Name": "WOODLANDS EAST",
+        "Park_Count": "0.0",
+        "Garden_Count": "30.0",
+        "Total_Count": "30.0"
+    },
+    {
+        "Subzone_Name": "YEW TEE",
+        "Park_Count": "0.0",
+        "Garden_Count": "7.0",
+        "Total_Count": "7.0"
+    },
+    {
+        "Subzone_Name": "YIO CHU KANG",
+        "Park_Count": "0.0",
+        "Garden_Count": "2.0",
+        "Total_Count": "2.0"
+    },
+    {
+        "Subzone_Name": "YISHUN EAST",
+        "Park_Count": "0.0",
+        "Garden_Count": "18.0",
+        "Total_Count": "18.0"
+    },
+    {
+        "Subzone_Name": "YISHUN WEST",
+        "Park_Count": "0.0",
+        "Garden_Count": "12.0",
+        "Total_Count": "12.0"
+    },
+    {
+        "Subzone_Name": "YUHUA EAST",
+        "Park_Count": "0.0",
+        "Garden_Count": "14.0",
+        "Total_Count": "14.0"
+    },
+    {
+        "Subzone_Name": "YUHUA WEST",
+        "Park_Count": "0.0",
+        "Garden_Count": "8.0",
+        "Total_Count": "8.0"
+    }
+]
