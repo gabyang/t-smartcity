@@ -1,12 +1,11 @@
-from openai import OpenAI
+import openai
 import re
-
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def parse_query(user_query: str):
     """
@@ -143,8 +142,8 @@ def generate_synthetic_data_code(user_query: str) -> str:
     columns = suggest_columns_for_data_type(data_type)
     prompt_for_code = build_code_generation_prompt(location, locale, columns)
 
-    response = client.completions.create(
-        model="text-davinci-003",  # or whichever model you prefer
+    response = openai.completions.create(
+        model="gpt-3.5-turbo",
         prompt=prompt_for_code,
         max_tokens=700,
         temperature=0.2,
