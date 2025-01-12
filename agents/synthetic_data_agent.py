@@ -179,8 +179,8 @@ def generate_synthetic_data_code(user_query: str) -> str:
     columns = suggest_columns_for_data_type(data_type)
     prompt_for_code = build_code_generation_prompt(location, locale, columns)
 
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
+    response = openai.chat.completions.create(
+        model="gpt-4o",
         messages=[
             {
                 "role": "system",
