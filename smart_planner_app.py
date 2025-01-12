@@ -184,6 +184,17 @@ def map_visualization_page():
         """
     )
 
+    # map the name to proper name in st
+    mapping_df = pd.DataFrame.from_dict(column_mapping, orient='index')
+
+    # select only the columns that are after Multigenerational housing
+    mapping_df = mapping_df.iloc[9:]
+    # Create a toggleable section for documentation
+    with st.expander("Documentation for the columns"):
+        st.write(mapping_df)
+
+    
+
     try:
         @st.cache_data
         def load_data():
@@ -206,14 +217,11 @@ def map_visualization_page():
 
         numeric_columns = gdf.select_dtypes(include=[np.number]).columns   
         # numeric_columns = numeric_columns.drop(["longitude", "latitude"])
-
         filter_option = st.selectbox("Select Filter", numeric_columns, index=0)
         selected_column = filter_option
         selected_column_name = column_mapping[selected_column]['name']
         selected_column_desc = column_mapping[selected_column]['description']
-
         
-
         # Map style selection
         map_style = st.sidebar.selectbox(
             "Select Map Style",
@@ -223,7 +231,15 @@ def map_visualization_page():
         
         # st.markdown(f"Display Name: **{selected_column}**")
         # st.markdown(f"### Data: **{selected_column_name}**")
-        st.markdown(f"#### Description: *{selected_column_desc}*")
+        st.markdown(
+                f"""
+                <div style="background-color: #f9f9f9; padding: 10px; border-radius: 5px; margin-bottom: 10px;">
+                    <h4 style="color: #333;">Description:</h4>
+                    <p style="font-style: italic; color: #555;">{selected_column_desc}</p>
+                </div>
+                """,
+                unsafe_allow_html=True
+        )
         fig = px.choropleth_mapbox(
             gdf,
             geojson=geojson_data,

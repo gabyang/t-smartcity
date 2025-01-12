@@ -1,10 +1,10 @@
 column_mapping = {
     'Name': {'name': 'Planning Area Name', 'description': 'The official name of the planning area or entity in Singapore.'},
     'geometry': {'name': 'Geometric Boundaries', 'description': 'Geometric representation (polygon/coordinates) of the area boundaries.'},
-    'PLN_AREA_N': {'name': 'Planning Area Name (Abbreviated)', 'description': 'Abbreviated name of the planning area, as used in official records.'},
+    'PLN_AREA_N': {'name': 'PLN_AREA_N', 'description': 'Abbreviated name of the planning area, as used in official records.'},
     'PLN_AREA_C': {'name': 'Planning Area Code', 'description': 'Unique code assigned to the planning area for identification purposes.'},
     'CA_IND': {'name': 'Central Area Indicator', 'description': 'Indicates whether the planning area belongs to the Central Region (Yes/No).'},
-    'REGION_N': {'name': 'Region Name', 'description': 'The name of the geographical region in which the planning area is located.'},
+    'REGION_N': {'name': 'REGION_N', 'description': 'The name of the geographical region in which the planning area is located.'},
     'REGION_C': {'name': 'Region Code', 'description': 'Unique code representing the region containing the planning area.'},
     'INC_CRC': {'name': 'Incremental Update CRC', 'description': 'A cyclic redundancy check value used for verifying incremental updates to the data.'},
     'FMEL_UPD_D': {'name': 'Data Update Date', 'description': 'The date when the data for this planning area was last updated.'},
