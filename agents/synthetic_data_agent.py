@@ -1,8 +1,12 @@
 from openai import OpenAI
-
-client = OpenAI()
 import re
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def parse_query(user_query: str):
     """
