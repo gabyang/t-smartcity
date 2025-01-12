@@ -1,0 +1,1010 @@
+[
+    {
+        "Subzone_Name": "ALEXANDRA HILL",
+        "park_area": "37948.82754233741",
+        "rooftop_area": "0.0",
+        "total_area": "37948.82754233741"
+    },
+    {
+        "Subzone_Name": "ALJUNIED",
+        "park_area": "10401.760501738941",
+        "rooftop_area": "0.0",
+        "total_area": "10401.760501738941"
+    },
+    {
+        "Subzone_Name": "ANAK BUKIT",
+        "park_area": "27971.223100786614",
+        "rooftop_area": "0.0",
+        "total_area": "27971.223100786614"
+    },
+    {
+        "Subzone_Name": "ANCHORVALE",
+        "park_area": "55085.45589636514",
+        "rooftop_area": "0.0",
+        "total_area": "55085.45589636514"
+    },
+    {
+        "Subzone_Name": "BALESTIER",
+        "park_area": "3841.088100613366",
+        "rooftop_area": "0.0",
+        "total_area": "3841.088100613366"
+    },
+    {
+        "Subzone_Name": "BANGKIT",
+        "park_area": "50859.41020359578",
+        "rooftop_area": "0.0",
+        "total_area": "50859.41020359578"
+    },
+    {
+        "Subzone_Name": "BAYSHORE",
+        "park_area": "487484.3969860126",
+        "rooftop_area": "0.0",
+        "total_area": "487484.3969860126"
+    },
+    {
+        "Subzone_Name": "BEDOK NORTH",
+        "park_area": "16675.78199895956",
+        "rooftop_area": "0.0",
+        "total_area": "16675.78199895956"
+    },
+    {
+        "Subzone_Name": "BEDOK RESERVOIR",
+        "park_area": "518891.4482535293",
+        "rooftop_area": "0.0",
+        "total_area": "518891.4482535293"
+    },
+    {
+        "Subzone_Name": "BEDOK SOUTH",
+        "park_area": "36018.19472576159",
+        "rooftop_area": "0.0",
+        "total_area": "36018.19472576159"
+    },
+    {
+        "Subzone_Name": "BENDEMEER",
+        "park_area": "5960.159317920367",
+        "rooftop_area": "0.0",
+        "total_area": "5960.159317920367"
+    },
+    {
+        "Subzone_Name": "BIDADARI",
+        "park_area": "47863.73619871121",
+        "rooftop_area": "0.0",
+        "total_area": "47863.73619871121"
+    },
+    {
+        "Subzone_Name": "BISHAN EAST",
+        "park_area": "17832.00834938109",
+        "rooftop_area": "0.0",
+        "total_area": "17832.00834938109"
+    },
+    {
+        "Subzone_Name": "BOAT QUAY",
+        "park_area": "13330.026894622162",
+        "rooftop_area": "0.0",
+        "total_area": "13330.026894622162"
+    },
+    {
+        "Subzone_Name": "BRAS BASAH",
+        "park_area": "6795.110240117146",
+        "rooftop_area": "0.0",
+        "total_area": "6795.110240117146"
+    },
+    {
+        "Subzone_Name": "BUKIT BATOK SOUTH",
+        "park_area": "2680.8089847789975",
+        "rooftop_area": "0.0",
+        "total_area": "2680.8089847789975"
+    },
+    {
+        "Subzone_Name": "BUKIT HO SWEE",
+        "park_area": "3395.0919601556375",
+        "rooftop_area": "0.0",
+        "total_area": "3395.0919601556375"
+    },
+    {
+        "Subzone_Name": "BUKIT MERAH",
+        "park_area": "35437.53135952064",
+        "rooftop_area": "0.0",
+        "total_area": "35437.53135952064"
+    },
+    {
+        "Subzone_Name": "CENTRAL WATER CATCHMENT",
+        "park_area": "31376031.951840598",
+        "rooftop_area": "0.0",
+        "total_area": "31376031.951840598"
+    },
+    {
+        "Subzone_Name": "CHANGI AIRPORT",
+        "park_area": "248727.3163649207",
+        "rooftop_area": "0.0",
+        "total_area": "248727.3163649207"
+    },
+    {
+        "Subzone_Name": "CHANGI POINT",
+        "park_area": "84534.35484474961",
+        "rooftop_area": "0.0",
+        "total_area": "84534.35484474961"
+    },
+    {
+        "Subzone_Name": "CHENG SAN",
+        "park_area": "57647.9786492516",
+        "rooftop_area": "0.0",
+        "total_area": "57647.9786492516"
+    },
+    {
+        "Subzone_Name": "CHINATOWN",
+        "park_area": "20712.47908466311",
+        "rooftop_area": "0.0",
+        "total_area": "20712.47908466311"
+    },
+    {
+        "Subzone_Name": "CHOA CHU KANG CENTRAL",
+        "park_area": "100938.90117231994",
+        "rooftop_area": "0.0",
+        "total_area": "100938.90117231994"
+    },
+    {
+        "Subzone_Name": "CHOA CHU KANG NORTH",
+        "park_area": "9200.719394740538",
+        "rooftop_area": "0.0",
+        "total_area": "9200.719394740538"
+    },
+    {
+        "Subzone_Name": "CITY HALL",
+        "park_area": "64297.826563198316",
+        "rooftop_area": "0.0",
+        "total_area": "64297.826563198316"
+    },
+    {
+        "Subzone_Name": "CLEMENTI CENTRAL",
+        "park_area": "5093.6389274178055",
+        "rooftop_area": "0.0",
+        "total_area": "5093.6389274178055"
+    },
+    {
+        "Subzone_Name": "CLEMENTI WOODS",
+        "park_area": "114671.76831926183",
+        "rooftop_area": "0.0",
+        "total_area": "114671.76831926183"
+    },
+    {
+        "Subzone_Name": "CLIFFORD PIER",
+        "park_area": "700.8097555351519",
+        "rooftop_area": "0.0",
+        "total_area": "700.8097555351519"
+    },
+    {
+        "Subzone_Name": "CONEY ISLAND",
+        "park_area": "957424.1832792052",
+        "rooftop_area": "0.0",
+        "total_area": "957424.1832792052"
+    },
+    {
+        "Subzone_Name": "CORONATION ROAD",
+        "park_area": "4742.729895570911",
+        "rooftop_area": "0.0",
+        "total_area": "4742.729895570911"
+    },
+    {
+        "Subzone_Name": "CRAWFORD",
+        "park_area": "11416.106164916288",
+        "rooftop_area": "0.0",
+        "total_area": "11416.106164916288"
+    },
+    {
+        "Subzone_Name": "DAIRY FARM",
+        "park_area": "69578.24222335369",
+        "rooftop_area": "0.0",
+        "total_area": "69578.24222335369"
+    },
+    {
+        "Subzone_Name": "DEPOT ROAD",
+        "park_area": "195.22636891068598",
+        "rooftop_area": "0.0",
+        "total_area": "195.22636891068598"
+    },
+    {
+        "Subzone_Name": "DHOBY GHAUT",
+        "park_area": "24579.665706658663",
+        "rooftop_area": "0.0",
+        "total_area": "24579.665706658663"
+    },
+    {
+        "Subzone_Name": "DUNEARN",
+        "park_area": "7374.010546913248",
+        "rooftop_area": "0.0",
+        "total_area": "7374.010546913248"
+    },
+    {
+        "Subzone_Name": "EAST COAST",
+        "park_area": "439469.6887237623",
+        "rooftop_area": "0.0",
+        "total_area": "439469.6887237623"
+    },
+    {
+        "Subzone_Name": "EVERTON PARK",
+        "park_area": "5713.2755280634265",
+        "rooftop_area": "0.0",
+        "total_area": "5713.2755280634265"
+    },
+    {
+        "Subzone_Name": "FABER",
+        "park_area": "15557.557753383708",
+        "rooftop_area": "0.0",
+        "total_area": "15557.557753383708"
+    },
+    {
+        "Subzone_Name": "FAJAR",
+        "park_area": "49105.911347246",
+        "rooftop_area": "0.0",
+        "total_area": "49105.911347246"
+    },
+    {
+        "Subzone_Name": "FARRER COURT",
+        "park_area": "2085.841835147426",
+        "rooftop_area": "0.0",
+        "total_area": "2085.841835147426"
+    },
+    {
+        "Subzone_Name": "FERNVALE",
+        "park_area": "175589.43185805515",
+        "rooftop_area": "0.0",
+        "total_area": "175589.43185805515"
+    },
+    {
+        "Subzone_Name": "FLORA DRIVE",
+        "park_area": "11703.055045909125",
+        "rooftop_area": "0.0",
+        "total_area": "11703.055045909125"
+    },
+    {
+        "Subzone_Name": "FORT CANNING",
+        "park_area": "231597.98574315803",
+        "rooftop_area": "0.0",
+        "total_area": "231597.98574315803"
+    },
+    {
+        "Subzone_Name": "FRANKEL",
+        "park_area": "66738.83096396468",
+        "rooftop_area": "0.0",
+        "total_area": "66738.83096396468"
+    },
+    {
+        "Subzone_Name": "GALI BATU",
+        "park_area": "110963.48237573962",
+        "rooftop_area": "0.0",
+        "total_area": "110963.48237573962"
+    },
+    {
+        "Subzone_Name": "GEYLANG EAST",
+        "park_area": "17114.8111899689",
+        "rooftop_area": "0.0",
+        "total_area": "17114.8111899689"
+    },
+    {
+        "Subzone_Name": "GHIM MOH",
+        "park_area": "27316.961098087566",
+        "rooftop_area": "0.0",
+        "total_area": "27316.961098087566"
+    },
+    {
+        "Subzone_Name": "GOMBAK",
+        "park_area": "132106.74837121886",
+        "rooftop_area": "0.0",
+        "total_area": "132106.74837121886"
+    },
+    {
+        "Subzone_Name": "GREENWOOD PARK",
+        "park_area": "234352.33508385264",
+        "rooftop_area": "0.0",
+        "total_area": "234352.33508385264"
+    },
+    {
+        "Subzone_Name": "GUILIN",
+        "park_area": "415334.99822808197",
+        "rooftop_area": "0.0",
+        "total_area": "415334.99822808197"
+    },
+    {
+        "Subzone_Name": "HENDERSON HILL",
+        "park_area": "33337.51627622123",
+        "rooftop_area": "0.0",
+        "total_area": "33337.51627622123"
+    },
+    {
+        "Subzone_Name": "HILLCREST",
+        "park_area": "28606.197753882687",
+        "rooftop_area": "0.0",
+        "total_area": "28606.197753882687"
+    },
+    {
+        "Subzone_Name": "HILLVIEW",
+        "park_area": "398434.73886992334",
+        "rooftop_area": "0.0",
+        "total_area": "398434.73886992334"
+    },
+    {
+        "Subzone_Name": "HOLLAND DRIVE",
+        "park_area": "2737.994684036982",
+        "rooftop_area": "0.0",
+        "total_area": "2737.994684036982"
+    },
+    {
+        "Subzone_Name": "HOLLAND ROAD",
+        "park_area": "150537.2912962147",
+        "rooftop_area": "0.0",
+        "total_area": "150537.2912962147"
+    },
+    {
+        "Subzone_Name": "HOUGANG CENTRAL",
+        "park_area": "11020.754985665839",
+        "rooftop_area": "0.0",
+        "total_area": "11020.754985665839"
+    },
+    {
+        "Subzone_Name": "HOUGANG EAST",
+        "park_area": "155132.3568211882",
+        "rooftop_area": "0.0",
+        "total_area": "155132.3568211882"
+    },
+    {
+        "Subzone_Name": "INSTITUTION HILL",
+        "park_area": "7759.628884592868",
+        "rooftop_area": "0.0",
+        "total_area": "7759.628884592868"
+    },
+    {
+        "Subzone_Name": "ISTANA NEGARA",
+        "park_area": "24991.110940985316",
+        "rooftop_area": "0.0",
+        "total_area": "24991.110940985316"
+    },
+    {
+        "Subzone_Name": "JELEBU",
+        "park_area": "16440.42393401945",
+        "rooftop_area": "0.0",
+        "total_area": "16440.42393401945"
+    },
+    {
+        "Subzone_Name": "JOO SENG",
+        "park_area": "7246.020930912401",
+        "rooftop_area": "0.0",
+        "total_area": "7246.020930912401"
+    },
+    {
+        "Subzone_Name": "KAKI BUKIT",
+        "park_area": "1050.7131490724453",
+        "rooftop_area": "0.0",
+        "total_area": "1050.7131490724453"
+    },
+    {
+        "Subzone_Name": "KAMPONG BUGIS",
+        "park_area": "27621.291876065236",
+        "rooftop_area": "0.0",
+        "total_area": "27621.291876065236"
+    },
+    {
+        "Subzone_Name": "KAMPONG JAVA",
+        "park_area": "5065.799044023378",
+        "rooftop_area": "0.0",
+        "total_area": "5065.799044023378"
+    },
+    {
+        "Subzone_Name": "KAMPONG TIONG BAHRU",
+        "park_area": "26401.80386025157",
+        "rooftop_area": "0.0",
+        "total_area": "26401.80386025157"
+    },
+    {
+        "Subzone_Name": "KATONG",
+        "park_area": "15498.394473748307",
+        "rooftop_area": "0.0",
+        "total_area": "15498.394473748307"
+    },
+    {
+        "Subzone_Name": "KEBUN BAHRU",
+        "park_area": "218114.73507277318",
+        "rooftop_area": "0.0",
+        "total_area": "218114.73507277318"
+    },
+    {
+        "Subzone_Name": "KEMBANGAN",
+        "park_area": "43895.03034534704",
+        "rooftop_area": "0.0",
+        "total_area": "43895.03034534704"
+    },
+    {
+        "Subzone_Name": "KENT RIDGE",
+        "park_area": "695658.1506356559",
+        "rooftop_area": "0.0",
+        "total_area": "695658.1506356559"
+    },
+    {
+        "Subzone_Name": "KIAN TECK",
+        "park_area": "82956.81763162857",
+        "rooftop_area": "0.0",
+        "total_area": "82956.81763162857"
+    },
+    {
+        "Subzone_Name": "KOVAN",
+        "park_area": "10746.409025331342",
+        "rooftop_area": "0.0",
+        "total_area": "10746.409025331342"
+    },
+    {
+        "Subzone_Name": "KRANJI",
+        "park_area": "28887.082572249477",
+        "rooftop_area": "0.0",
+        "total_area": "28887.082572249477"
+    },
+    {
+        "Subzone_Name": "LAKESIDE (LEISURE)",
+        "park_area": "595218.4410881015",
+        "rooftop_area": "0.0",
+        "total_area": "595218.4410881015"
+    },
+    {
+        "Subzone_Name": "LAVENDER",
+        "park_area": "10970.659760467082",
+        "rooftop_area": "0.0",
+        "total_area": "10970.659760467082"
+    },
+    {
+        "Subzone_Name": "LEEDON PARK",
+        "park_area": "2688.5797174483773",
+        "rooftop_area": "0.0",
+        "total_area": "2688.5797174483773"
+    },
+    {
+        "Subzone_Name": "LIM CHU KANG",
+        "park_area": "2444235.1210469967",
+        "rooftop_area": "0.0",
+        "total_area": "2444235.1210469967"
+    },
+    {
+        "Subzone_Name": "LITTLE INDIA",
+        "park_area": "486.5594808915157",
+        "rooftop_area": "0.0",
+        "total_area": "486.5594808915157"
+    },
+    {
+        "Subzone_Name": "LORONG AH SOO",
+        "park_area": "29251.501614546596",
+        "rooftop_area": "0.0",
+        "total_area": "29251.501614546596"
+    },
+    {
+        "Subzone_Name": "LORONG CHUAN",
+        "park_area": "18761.269669188223",
+        "rooftop_area": "0.0",
+        "total_area": "18761.269669188223"
+    },
+    {
+        "Subzone_Name": "LOWER SELETAR",
+        "park_area": "57486.94452132879",
+        "rooftop_area": "0.0",
+        "total_area": "57486.94452132879"
+    },
+    {
+        "Subzone_Name": "LOYANG EAST",
+        "park_area": "4146.09136166373",
+        "rooftop_area": "0.0",
+        "total_area": "4146.09136166373"
+    },
+    {
+        "Subzone_Name": "MACPHERSON",
+        "park_area": "23797.556055187237",
+        "rooftop_area": "0.0",
+        "total_area": "23797.556055187237"
+    },
+    {
+        "Subzone_Name": "MALCOLM",
+        "park_area": "16289.435151830301",
+        "rooftop_area": "0.0",
+        "total_area": "16289.435151830301"
+    },
+    {
+        "Subzone_Name": "MANDAI EAST",
+        "park_area": "11195.980350240083",
+        "rooftop_area": "0.0",
+        "total_area": "11195.980350240083"
+    },
+    {
+        "Subzone_Name": "MANDAI ESTATE",
+        "park_area": "1699.5324688426958",
+        "rooftop_area": "0.0",
+        "total_area": "1699.5324688426958"
+    },
+    {
+        "Subzone_Name": "MANDAI WEST",
+        "park_area": "309916.3533019084",
+        "rooftop_area": "0.0",
+        "total_area": "309916.3533019084"
+    },
+    {
+        "Subzone_Name": "MARINA CENTRE",
+        "park_area": "6380.497541346529",
+        "rooftop_area": "0.0",
+        "total_area": "6380.497541346529"
+    },
+    {
+        "Subzone_Name": "MARINA EAST",
+        "park_area": "66547.12408383568",
+        "rooftop_area": "0.0",
+        "total_area": "66547.12408383568"
+    },
+    {
+        "Subzone_Name": "MARINA EAST (MP)",
+        "park_area": "228580.091479436",
+        "rooftop_area": "0.0",
+        "total_area": "228580.091479436"
+    },
+    {
+        "Subzone_Name": "MARINE PARADE",
+        "park_area": "6245.189171742413",
+        "rooftop_area": "0.0",
+        "total_area": "6245.189171742413"
+    },
+    {
+        "Subzone_Name": "MARITIME SQUARE",
+        "park_area": "815350.4196882405",
+        "rooftop_area": "0.0",
+        "total_area": "815350.4196882405"
+    },
+    {
+        "Subzone_Name": "MARYMOUNT",
+        "park_area": "390161.5050552627",
+        "rooftop_area": "0.0",
+        "total_area": "390161.5050552627"
+    },
+    {
+        "Subzone_Name": "MAXWELL",
+        "park_area": "5502.896457615528",
+        "rooftop_area": "0.0",
+        "total_area": "5502.896457615528"
+    },
+    {
+        "Subzone_Name": "MOULMEIN",
+        "park_area": "12949.018050554845",
+        "rooftop_area": "0.0",
+        "total_area": "12949.018050554845"
+    },
+    {
+        "Subzone_Name": "MOUNT EMILY",
+        "park_area": "161.97859162302885",
+        "rooftop_area": "0.0",
+        "total_area": "161.97859162302885"
+    },
+    {
+        "Subzone_Name": "MOUNTBATTEN",
+        "park_area": "58995.98250598727",
+        "rooftop_area": "0.0",
+        "total_area": "58995.98250598727"
+    },
+    {
+        "Subzone_Name": "NASSIM",
+        "park_area": "5114.926030152844",
+        "rooftop_area": "0.0",
+        "total_area": "5114.926030152844"
+    },
+    {
+        "Subzone_Name": "NATURE RESERVE",
+        "park_area": "3271365.2454737807",
+        "rooftop_area": "0.0",
+        "total_area": "3271365.2454737807"
+    },
+    {
+        "Subzone_Name": "NEE SOON",
+        "park_area": "27520.75699399061",
+        "rooftop_area": "0.0",
+        "total_area": "27520.75699399061"
+    },
+    {
+        "Subzone_Name": "NORTH COAST",
+        "park_area": "129389.7010873805",
+        "rooftop_area": "0.0",
+        "total_area": "129389.7010873805"
+    },
+    {
+        "Subzone_Name": "NORTH-EASTERN ISLANDS",
+        "park_area": "10032985.053531554",
+        "rooftop_area": "0.0",
+        "total_area": "10032985.053531554"
+    },
+    {
+        "Subzone_Name": "NORTHLAND",
+        "park_area": "81346.08632494247",
+        "rooftop_area": "0.0",
+        "total_area": "81346.08632494247"
+    },
+    {
+        "Subzone_Name": "ONE NORTH",
+        "park_area": "89557.51894846186",
+        "rooftop_area": "0.0",
+        "total_area": "89557.51894846186"
+    },
+    {
+        "Subzone_Name": "PASIR PANJANG 1",
+        "park_area": "3343.158871633018",
+        "rooftop_area": "0.0",
+        "total_area": "3343.158871633018"
+    },
+    {
+        "Subzone_Name": "PASIR PANJANG 2",
+        "park_area": "8033.5553326277295",
+        "rooftop_area": "0.0",
+        "total_area": "8033.5553326277295"
+    },
+    {
+        "Subzone_Name": "PASIR RIS CENTRAL",
+        "park_area": "167513.06025957927",
+        "rooftop_area": "0.0",
+        "total_area": "167513.06025957927"
+    },
+    {
+        "Subzone_Name": "PASIR RIS PARK",
+        "park_area": "660042.3898907903",
+        "rooftop_area": "0.0",
+        "total_area": "660042.3898907903"
+    },
+    {
+        "Subzone_Name": "PASIR RIS WAFER FAB PARK",
+        "park_area": "786.6682705346284",
+        "rooftop_area": "0.0",
+        "total_area": "786.6682705346284"
+    },
+    {
+        "Subzone_Name": "PASIR RIS WEST",
+        "park_area": "10374.858947354696",
+        "rooftop_area": "0.0",
+        "total_area": "10374.858947354696"
+    },
+    {
+        "Subzone_Name": "PEARL'S HILL",
+        "park_area": "81424.97056013279",
+        "rooftop_area": "0.0",
+        "total_area": "81424.97056013279"
+    },
+    {
+        "Subzone_Name": "PEOPLE'S PARK",
+        "park_area": "2891.002255628712",
+        "rooftop_area": "0.0",
+        "total_area": "2891.002255628712"
+    },
+    {
+        "Subzone_Name": "PORT",
+        "park_area": "559608.8740079865",
+        "rooftop_area": "0.0",
+        "total_area": "559608.8740079865"
+    },
+    {
+        "Subzone_Name": "PUNGGOL TOWN CENTRE",
+        "park_area": "135382.70665754384",
+        "rooftop_area": "0.0",
+        "total_area": "135382.70665754384"
+    },
+    {
+        "Subzone_Name": "QUEENSWAY",
+        "park_area": "24156.584220535857",
+        "rooftop_area": "0.0",
+        "total_area": "24156.584220535857"
+    },
+    {
+        "Subzone_Name": "RAFFLES PLACE",
+        "park_area": "10414.19757217342",
+        "rooftop_area": "0.0",
+        "total_area": "10414.19757217342"
+    },
+    {
+        "Subzone_Name": "RESERVOIR VIEW",
+        "park_area": "35999.16679553072",
+        "rooftop_area": "0.0",
+        "total_area": "35999.16679553072"
+    },
+    {
+        "Subzone_Name": "RIDOUT",
+        "park_area": "11030.81986901162",
+        "rooftop_area": "0.0",
+        "total_area": "11030.81986901162"
+    },
+    {
+        "Subzone_Name": "RIVERVALE",
+        "park_area": "999.982348287891",
+        "rooftop_area": "0.0",
+        "total_area": "999.982348287891"
+    },
+    {
+        "Subzone_Name": "ROBERTSON QUAY",
+        "park_area": "0.009137891404137056",
+        "rooftop_area": "0.0",
+        "total_area": "0.009137891404137056"
+    },
+    {
+        "Subzone_Name": "SELETAR AEROSPACE PARK",
+        "park_area": "32313.05358923892",
+        "rooftop_area": "0.0",
+        "total_area": "32313.05358923892"
+    },
+    {
+        "Subzone_Name": "SELETAR HILLS",
+        "park_area": "137316.27494536046",
+        "rooftop_area": "0.0",
+        "total_area": "137316.27494536046"
+    },
+    {
+        "Subzone_Name": "SEMBAWANG CENTRAL",
+        "park_area": "2431.6717040879553",
+        "rooftop_area": "0.0",
+        "total_area": "2431.6717040879553"
+    },
+    {
+        "Subzone_Name": "SEMBAWANG EAST",
+        "park_area": "686.6134464433435",
+        "rooftop_area": "0.0",
+        "total_area": "686.6134464433435"
+    },
+    {
+        "Subzone_Name": "SEMBAWANG HILLS",
+        "park_area": "21927.338216366734",
+        "rooftop_area": "0.0",
+        "total_area": "21927.338216366734"
+    },
+    {
+        "Subzone_Name": "SEMBAWANG SPRINGS",
+        "park_area": "17194.056694184594",
+        "rooftop_area": "0.0",
+        "total_area": "17194.056694184594"
+    },
+    {
+        "Subzone_Name": "SEMBAWANG STRAITS",
+        "park_area": "142809.6460739298",
+        "rooftop_area": "0.0",
+        "total_area": "142809.6460739298"
+    },
+    {
+        "Subzone_Name": "SENNETT",
+        "park_area": "15895.520397868699",
+        "rooftop_area": "0.0",
+        "total_area": "15895.520397868699"
+    },
+    {
+        "Subzone_Name": "SERANGOON CENTRAL",
+        "park_area": "865.5983192606884",
+        "rooftop_area": "0.0",
+        "total_area": "865.5983192606884"
+    },
+    {
+        "Subzone_Name": "SERANGOON GARDEN",
+        "park_area": "42844.796431060815",
+        "rooftop_area": "0.0",
+        "total_area": "42844.796431060815"
+    },
+    {
+        "Subzone_Name": "SIGLAP",
+        "park_area": "377078.5959960649",
+        "rooftop_area": "0.0",
+        "total_area": "377078.5959960649"
+    },
+    {
+        "Subzone_Name": "SIMEI",
+        "park_area": "16882.107223323026",
+        "rooftop_area": "0.0",
+        "total_area": "16882.107223323026"
+    },
+    {
+        "Subzone_Name": "SOMERSET",
+        "park_area": "5188.720291234909",
+        "rooftop_area": "0.0",
+        "total_area": "5188.720291234909"
+    },
+    {
+        "Subzone_Name": "SPRINGLEAF",
+        "park_area": "188195.13150699215",
+        "rooftop_area": "0.0",
+        "total_area": "188195.13150699215"
+    },
+    {
+        "Subzone_Name": "SUNSET WAY",
+        "park_area": "15158.888024256503",
+        "rooftop_area": "0.0",
+        "total_area": "15158.888024256503"
+    },
+    {
+        "Subzone_Name": "SWISS CLUB",
+        "park_area": "30333.04929327485",
+        "rooftop_area": "0.0",
+        "total_area": "30333.04929327485"
+    },
+    {
+        "Subzone_Name": "TAGORE",
+        "park_area": "541321.4759819513",
+        "rooftop_area": "0.0",
+        "total_area": "541321.4759819513"
+    },
+    {
+        "Subzone_Name": "TAI SENG",
+        "park_area": "15081.103302709376",
+        "rooftop_area": "0.0",
+        "total_area": "15081.103302709376"
+    },
+    {
+        "Subzone_Name": "TAMAN JURONG",
+        "park_area": "3100.406328415585",
+        "rooftop_area": "0.0",
+        "total_area": "3100.406328415585"
+    },
+    {
+        "Subzone_Name": "TAMPINES EAST",
+        "park_area": "98774.75418755687",
+        "rooftop_area": "0.0",
+        "total_area": "98774.75418755687"
+    },
+    {
+        "Subzone_Name": "TAMPINES NORTH",
+        "park_area": "412145.7080462423",
+        "rooftop_area": "0.0",
+        "total_area": "412145.7080462423"
+    },
+    {
+        "Subzone_Name": "TANGLIN HALT",
+        "park_area": "41396.93069850406",
+        "rooftop_area": "0.0",
+        "total_area": "41396.93069850406"
+    },
+    {
+        "Subzone_Name": "TANJONG PAGAR",
+        "park_area": "9872.57932237884",
+        "rooftop_area": "0.0",
+        "total_area": "9872.57932237884"
+    },
+    {
+        "Subzone_Name": "TEBAN GARDENS",
+        "park_area": "2958.706513089461",
+        "rooftop_area": "0.0",
+        "total_area": "2958.706513089461"
+    },
+    {
+        "Subzone_Name": "TELOK BLANGAH DRIVE",
+        "park_area": "354751.3376885279",
+        "rooftop_area": "0.0",
+        "total_area": "354751.3376885279"
+    },
+    {
+        "Subzone_Name": "TELOK BLANGAH RISE",
+        "park_area": "0.09954861513169125",
+        "rooftop_area": "0.0",
+        "total_area": "0.09954861513169125"
+    },
+    {
+        "Subzone_Name": "THE WHARVES",
+        "park_area": "16.709379286647682",
+        "rooftop_area": "0.0",
+        "total_area": "16.709379286647682"
+    },
+    {
+        "Subzone_Name": "TIONG BAHRU",
+        "park_area": "3905.3970377983",
+        "rooftop_area": "0.0",
+        "total_area": "3905.3970377983"
+    },
+    {
+        "Subzone_Name": "TOA PAYOH CENTRAL",
+        "park_area": "45692.56045335672",
+        "rooftop_area": "0.0",
+        "total_area": "45692.56045335672"
+    },
+    {
+        "Subzone_Name": "TRAFALGAR",
+        "park_area": "2181.040050823571",
+        "rooftop_area": "0.0",
+        "total_area": "2181.040050823571"
+    },
+    {
+        "Subzone_Name": "TURF CLUB",
+        "park_area": "35529.74356541024",
+        "rooftop_area": "0.0",
+        "total_area": "35529.74356541024"
+    },
+    {
+        "Subzone_Name": "TYERSALL",
+        "park_area": "821236.5721794544",
+        "rooftop_area": "0.0",
+        "total_area": "821236.5721794544"
+    },
+    {
+        "Subzone_Name": "ULU PANDAN",
+        "park_area": "28739.9169689558",
+        "rooftop_area": "0.0",
+        "total_area": "28739.9169689558"
+    },
+    {
+        "Subzone_Name": "UPPER PAYA LEBAR",
+        "park_area": "4585.837466906353",
+        "rooftop_area": "0.0",
+        "total_area": "4585.837466906353"
+    },
+    {
+        "Subzone_Name": "UPPER THOMSON",
+        "park_area": "910892.5600366498",
+        "rooftop_area": "0.0",
+        "total_area": "910892.5600366498"
+    },
+    {
+        "Subzone_Name": "WEST COAST",
+        "park_area": "18582.751705856947",
+        "rooftop_area": "0.0",
+        "total_area": "18582.751705856947"
+    },
+    {
+        "Subzone_Name": "WOODLANDS SOUTH",
+        "park_area": "14744.019384382138",
+        "rooftop_area": "0.0",
+        "total_area": "14744.019384382138"
+    },
+    {
+        "Subzone_Name": "WOODLANDS WEST",
+        "park_area": "161905.21779555682",
+        "rooftop_area": "0.0",
+        "total_area": "161905.21779555682"
+    },
+    {
+        "Subzone_Name": "WOODLEIGH",
+        "park_area": "2734.4134658431803",
+        "rooftop_area": "0.0",
+        "total_area": "2734.4134658431803"
+    },
+    {
+        "Subzone_Name": "XILIN",
+        "park_area": "145610.3127030471",
+        "rooftop_area": "0.0",
+        "total_area": "145610.3127030471"
+    },
+    {
+        "Subzone_Name": "YIO CHU KANG EAST",
+        "park_area": "22632.22730486864",
+        "rooftop_area": "0.0",
+        "total_area": "22632.22730486864"
+    },
+    {
+        "Subzone_Name": "YIO CHU KANG WEST",
+        "park_area": "5305.986215371843",
+        "rooftop_area": "0.0",
+        "total_area": "5305.986215371843"
+    },
+    {
+        "Subzone_Name": "YISHUN CENTRAL",
+        "park_area": "23187.918219965795",
+        "rooftop_area": "0.0",
+        "total_area": "23187.918219965795"
+    },
+    {
+        "Subzone_Name": "YISHUN SOUTH",
+        "park_area": "138629.68959889305",
+        "rooftop_area": "0.0",
+        "total_area": "138629.68959889305"
+    },
+    {
+        "Subzone_Name": "YUNNAN",
+        "park_area": "14188.641839586973",
+        "rooftop_area": "0.0",
+        "total_area": "14188.641839586973"
+    },
+    {
+        "Subzone_Name": "BAYFRONT SUBZONE",
+        "park_area": "0.0",
+        "rooftop_area": "270.74836317314976",
+        "total_area": "270.74836317314976"
+    },
+    {
+        "Subzone_Name": "MARINA SOUTH",
+        "park_area": "0.0",
+        "rooftop_area": "23918.674610049533",
+        "total_area": "23918.674610049533"
+    },
+    {
+        "Subzone_Name": "STRAITS VIEW",
+        "park_area": "0.0",
+        "rooftop_area": "63748.523472369496",
+        "total_area": "63748.523472369496"
+    }
+]

@@ -1,5 +1,5 @@
 import openai
-from serpapi import GoogleSearch
+import serpapi
 import os
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -24,7 +24,7 @@ def serpapi_search(query: str, serpapi_api_key: str, num_results: int = 5):
         "num": num_results,  # Attempt to limit the number of results
         "hl": "en",
     }
-    search = GoogleSearch(params)
+    search = serpapi.search(params)
     result = search.get_dict()
 
     # SerpApi returns a variety of different fields,
