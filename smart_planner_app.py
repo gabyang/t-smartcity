@@ -5,6 +5,7 @@ import numpy as np
 import plotly.express as px
 import geopandas as gpd
 from map_column_dict import column_mapping
+from agents.synthetic_data_agent import generate_synthetic_data_code
 
 
 # ----- PAGE CONFIG & STYLES -----
@@ -293,6 +294,8 @@ def synthetic_generation_page():
         "For example: 'Generate synthetic data for a new city with demographic data'",
         value="Generate synthetic data for Singapore with demographic data to simulate population growth after a year"
     )
+
+    generate_synthetic_data_code(synthetic_query)
     
     if st.button("Generate Synthetic Data"):
         st.markdown("### Synthetic Data")
