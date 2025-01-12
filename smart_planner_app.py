@@ -6,6 +6,7 @@ import plotly.express as px
 import geopandas as gpd
 from map_column_dict import column_mapping
 from agents.synthetic_data_agent import generate_synthetic_data_code
+from agents.comparative_analysis_agent import generate_comparative_analysis
 
 
 # ----- PAGE CONFIG & STYLES -----
@@ -289,6 +290,8 @@ def comparative_analysis_page():
         "For example: 'How do cities like Tokyo address demographic aging?'",
         value="How do cities like Tokyo address demographic aging?",
     )
+
+    generate_comparative_analysis(compare_query)
 
     if st.button("Compare with Other Countries"):
         st.markdown("### Comparative Analysis Results")

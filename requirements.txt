@@ -5,3 +5,4 @@ numpy
 plotly
 openai
 python-dotenv
+serpapi
