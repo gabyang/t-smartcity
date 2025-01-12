@@ -361,11 +361,10 @@ def comparative_analysis_page():
         value="How do cities like Tokyo address demographic aging?",
     )
 
-    generate_comparative_analysis(compare_query)
-
     if st.button("Compare with Other Countries"):
+        summary = generate_comparative_analysis(compare_query)
         st.markdown("### Comparative Analysis Results")
-        st.write("[Placeholder for AI-generated comparative analysis]")
+        st.write(summary)
 
 
 def synthetic_generation_page():
@@ -382,11 +381,15 @@ def synthetic_generation_page():
         value="Generate synthetic data for Singapore with demographic data to simulate population growth after a year",
     )
 
-    generate_synthetic_data_code(synthetic_query)
-
     if st.button("Generate Synthetic Data"):
+        csv_data = generate_synthetic_data_code(synthetic_query)
         st.markdown("### Synthetic Data")
-        st.write("[Placeholder for AI-generated synthetic data]")
+        st.download_button(
+            label="Download synthetic_data.csv",
+            data=csv_data,
+            file_name="synthetic_data.csv",
+            mime="text/csv"
+        )
 
 
 if __name__ == "__main__":
