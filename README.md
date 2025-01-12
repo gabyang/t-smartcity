@@ -56,36 +56,16 @@ streamlit run smart_planner_app.py
 
 ### How to Test or Use the Solution
 
-For a clear demonstration of the application's features, watch the demonstration video linked below. The video showcases the application's functionality, including insights snapshot, geospatial visualization, and synthetic data generation.
-
-<!-- 1. **Upload Your Dataset**:
-   - Instructions for uploading or accessing sample datasets.
-2. **Explore Features**:
-   - Walkthrough of key features like insights snapshot, geospatial visualization, and synthetic data generation.
-3. **Export Results**:
-   - Guide on exporting visualizations and reports for stakeholders. -->
-
-<!-- ### Examples: -->
-
-<!-- - Example scenarios or datasets for testing the application. -->
-
-<!-- ---
-
-## Deployment Instructions (if applicable)
-### Steps to Deploy:
-1. **Prepare the Environment**:
-   - Ensure all prerequisites are installed.
-2. **Build and Deploy**:
-   - Detailed deployment steps for cloud or local environments.
-3. **Post-Deployment Verification**:
-   - Checklist for verifying the application is working as expected. -->
+For a clear demonstration of the application's features, watch the demonstration video linked below. The video showcases the application's functionality, including insights snapshot, geospatial visualization, and synthetic data generation. Most of testing can be done through the application's interface with stub prompts.
 
 ---
 
 ## Contributors
 
 - **Pairor Tarin**
+
   - Role: Developed the map visualization features, gathered various CSV and GeoJSON data into a combined file, studied and implemented GeoPandas, and worked on displaying spatial data in the map visualization page.
+
 - **William Jacob**
 
   - Role: Debugged synthetic data issues, fixed errors in data generation, and created `main.py` for OpenAI integration. Researched AI agents and implemented them invarious parts of the application.
