@@ -3,3 +3,5 @@ geopandas
 pandas
 numpy
 plotly
+openai
+python-dotenv
