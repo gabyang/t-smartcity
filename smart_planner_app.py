@@ -7,7 +7,9 @@ import geopandas as gpd
 from map_column_dict import column_mapping
 from agents.synthetic_data_agent import generate_synthetic_data_code
 from agents.comparative_analysis_agent import generate_comparative_analysis
+from agents.insight_report_agent import generate_insight_report
 from bs4 import BeautifulSoup
+from io import BytesIO
 
 # ----- PAGE CONFIG & STYLES -----
 st.set_page_config(
@@ -164,14 +166,23 @@ def query_ai_agent_page():
     )
     user_query = st.text_input(
         "What would you like to find out?",
-        value="What are the key transportation challenges the city is facing?",
+        value="What is the distribution of green spaces in Singapore across different planning areas?",
     )
 
     if st.button("Get Insight Report"):
-        st.markdown("### Insight Report")
+        #st.markdown("### Insight Report")
         # Placeholder text
-        st.write("Here is where your AI-generated insight report would appear.")
+        insight_report = generate_insight_report(user_query)
+        st.write(insight_report)
         # Optionally display some “calls” or “steps” if you want to mimic an agent’s chain-of-thought (in a user-friendly format).
+
+        report_bytes = BytesIO(insight_report.encode('utf-8'))
+        st.download_button(
+            label="Download Insight Report",
+            data=report_bytes,
+            file_name="insight_report.txt",
+            mime="text/plain"
+        )
 
 
 def map_visualization_page():
