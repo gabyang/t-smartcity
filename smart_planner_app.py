@@ -7,7 +7,7 @@ import geopandas as gpd
 
 # ----- PAGE CONFIG & STYLES -----
 st.set_page_config(
-    page_title="Smart City Planner Insights App",
+    page_title="SMART City Planner Insights App",
     page_icon="🌆",
     layout="wide"
 )
@@ -45,7 +45,7 @@ def main():
     st.sidebar.title("Navigation")
     selected_page = st.sidebar.radio(
         "Go to",
-        ["Dashboard", "Exploratory Data Insights", "Map Visualization", "Comparative Analysis"]
+        ["Dashboard", "Exploratory Data Insights", "Map Visualization", "Comparative Analysis", "Synthetic Generation"]
     )
 
     st.sidebar.markdown("---")
@@ -57,8 +57,12 @@ def main():
     st.title("Smart City Insights App")
     st.markdown(
         """
-        Welcome to the **Smart City Insights** application, an intelligent generative AI advisor 
-        designed to help you explore multimodal datasets for **demographic, transportation, economic, environment, and social** factors.
+        Welcome to the **SMART City Insights** application, an intelligent generative AI advisor 
+        designed to help you explore multimodal datasets for **demographic, transportation, economic, environment, social, land use, meteorological and geospatial** factors.
+
+        Please be aware that these insights may occasionally contain inaccuracies.
+        It is essential to verify any critical information independently and consult authoritative sources 
+        before making decisions based on the generated content. Your diligence in double-checking facts is highly encouraged.
         """
     )
 
@@ -73,6 +77,9 @@ def main():
 
     elif selected_page == "Comparative Analysis":
         comparative_analysis_page()
+
+    elif selected_page == "Synthetic Generation":
+        synthetic_generation_page()
 
 
 def dashboard_page():
@@ -149,7 +156,7 @@ def query_ai_agent_page():
     st.write(
         """
         Input your query related to **demographic, transportation, economic, environment, or social** issues, 
-        and let the agent automatically collect and consolidate information from the vector database.
+        and let the agent automatically collect and consolidate old and new information from your prorietary data lakehouse.
         """
     )
     user_query = st.text_input(
@@ -257,6 +264,24 @@ def comparative_analysis_page():
         st.markdown("### Comparative Analysis Results")
         st.write("[Placeholder for AI-generated comparative analysis]")
 
+
+def synthetic_generation_page():
+    st.subheader("Synthetic Generation")
+    st.write(
+        """
+        Want to create new data points that don't exist in the database? 
+        Ask the agent to generate **synthetic data** based on the existing data.
+        """
+    )
+
+    synthetic_query = st.text_input(
+        "For example: 'Generate synthetic data for a new city with demographic data'",
+        value="Generate synthetic data for Singapore with demographic data to simulate population growth after a year"
+    )
+    
+    if st.button("Generate Synthetic Data"):
+        st.markdown("### Synthetic Data")
+        st.write("[Placeholder for AI-generated synthetic data]")
 
 if __name__ == "__main__":
     main()
