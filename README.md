@@ -85,21 +85,21 @@ For a clear demonstration of the application's features, watch the demonstration
 ## Contributors
 
 - **Pairor Tarin**
-  - Role: Developed the map visualization features, gathered CSV and GeoJSON data, studied and implemented GeoPandas, and worked on displaying spatial data.
+  - Role: Developed the map visualization features, gathered various CSV and GeoJSON data into a combined file, studied and implemented GeoPandas, and worked on displaying spatial data in the map visualization page.
 - **William Jacob**
 
-  - Role: Debugged synthetic data issues, fixed errors in data generation, and created `main.py` for OpenAI integration.
+  - Role: Debugged synthetic data issues, fixed errors in data generation, and created `main.py` for OpenAI integration. Researched AI agents and implemented them invarious parts of the application.
 
-- **Bryan**
+- **Bryan Castorius Halim**
 
-  - Role: [Specify Bryan's role and contributions here.]
+  - Role: Contributed majorly to the proposal, created the project structure, and worked on the synthetic data generation process. Contributed to AI agent research and implementation. Refined the data generation process.
 
 - **Benjamin**
 
-  - Role: Conducted research on data lakes and assisted in gathering GeoJSON files.
+  - Role: Conducted research on data lakes and assisted in gathering GeoJSON files. Helped create the demonstration video.
 
-- **Gabriel**
-  - Role: Worked on data synthesization and generation processes.
+- **Gabrie Yang**
+  - Role: Worked on data synthesization and generation processes. Managed the project and gathered business insights for the application include the pain points of urban planners and the potential benefits of the solution. Helped create the demonstration video. Did the initial setup of the project.
 
 ---
 
@@ -110,7 +110,7 @@ For a clear demonstration of the application's features, watch the demonstration
 - The cost of API keys adds financial constraints to the application's scalability.
 - IBM Watson integration was attempted but faced issues, preventing its successful implementation.
 - Currently, the data is limited to Singapore, which restricts its applicability to other regions.
-- Some data is hardcoded, reducing flexibility and adaptability.
+- Most of the data is hardcoded, reducing flexibility and adaptability.
 - The application's interface is basic and lacks advanced features for user interaction.
 
 ### Future Improvements:
