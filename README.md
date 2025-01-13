@@ -87,7 +87,7 @@ For a clear demonstration of the application's features, watch the demonstration
 
   - Role: Conducted research on data lakes and assisted in gathering GeoJSON files. Helped create the demonstration video.
 
-- **Gabrie Yang**
+- **Gabriel Yang**
   - Role: Worked on data synthesization and generation processes. Managed the project and gathered business insights for the application include the pain points of urban planners and the potential benefits of the solution. Helped create the demonstration video. Did the initial setup of the project.
 
 ---
