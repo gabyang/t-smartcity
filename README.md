@@ -36,7 +36,7 @@ git clone https://github.com/gabyang/t-smartcity.git
 cd t-smartcity
 ```
 
-Set Up a Virtual Environment (optional but recommended) and install requirements:
+2. **Set Up a Virtual Environment (optional but recommended) and install requirements**:
 
 ```bash
 python -m venv venv
@@ -44,7 +44,16 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Run the web application with `streamlit`
+3. **Ask the team for the `.env` file**:
+   Request the team for the `.env` file containing the API keys and other sensitive information.
+   You can also create your own `.env` file with the following structure:
+
+```bash
+OPENAI_API_KEY="your_openai_api_key"
+SERP_API_KEY="your_serp_api_key"
+```
+
+4. **Run the web application with `streamlit`**:
 
 ```bash
 streamlit run smart_planner_app.py
@@ -103,7 +112,7 @@ For a clear demonstration of the application's features, watch the demonstration
 
 ## YouTube Link
 
-[Watch the Demo](https://youtu.be/your-video-link)
+[Watch the Demo](https://youtu.be/wTnNsgIQbqI)
 
 <!-- ### Video Structure:
 1. **Introduction**:
