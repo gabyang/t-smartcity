@@ -1,8 +1,8 @@
-# t-smartcity
+# UrbanPlan.ai
 
 ## Project Description
 
-**t-smartcity** is an intelligent application designed to empower urban planners by transforming raw data into actionable insights. By assuming the presence of an existing data pipeline, our solution streamlines data interaction and visualization to solve critical challenges in urban planning, such as data fragmentation, outdated plans, and lack of stakeholder engagement.
+**UrbanPlan.ai** is an intelligent application designed to empower urban planners by transforming raw data into actionable insights. By assuming the presence of an existing data pipeline, our solution streamlines data interaction and visualization to solve critical challenges in urban planning, such as data fragmentation, outdated plans, and lack of stakeholder engagement.
 
 ---
 
@@ -24,7 +24,7 @@ Urban planners face several challenges that hinder effective decision-making:
 
 ## Solution Features
 
-t-smartcity tackles these challenges with the following robust features:
+UrbanPlan.ai tackles these challenges with the following robust features:
 
 ### 1. **Exploratory Data Insights**
 - Provides real-time insights into key urban metrics, reducing dependency on external consultants.
