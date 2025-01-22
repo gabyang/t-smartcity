@@ -158,8 +158,6 @@ For a clear demonstration of the application's features, watch the demonstration
 - The cost of API keys adds financial constraints to the application's scalability.
 - IBM Watson integration was attempted but faced issues, preventing its successful implementation.
 - Currently, the data is limited to Singapore, which restricts its applicability to other regions.
-- Most of the data is hardcoded, reducing flexibility and adaptability.
-- The application's interface is basic and lacks advanced features for user interaction.
 
 ## Future Improvements
 
