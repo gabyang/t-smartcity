@@ -14,3 +14,12 @@ langchain-community
 langchain-experimental
 typing-extensions
 bs4
+pandas
+matplotlib
+seaborn
+scikit-learn
+numpy
+geopandas
+shapely
+spacy
+joblib
