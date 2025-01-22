@@ -151,6 +151,16 @@ For a clear demonstration of the application's features, watch the demonstration
   - Conducted research on data lakes and assisted in demonstration video creation.
 ---
 
+## Additional Notes
+
+### Limitations:
+
+- The cost of API keys adds financial constraints to the application's scalability.
+- IBM Watson integration was attempted but faced issues, preventing its successful implementation.
+- Currently, the data is limited to Singapore, which restricts its applicability to other regions.
+- Most of the data is hardcoded, reducing flexibility and adaptability.
+- The application's interface is basic and lacks advanced features for user interaction.
+
 ## Future Improvements
 
 - **Expanded Data Coverage**:
@@ -164,23 +174,6 @@ For a clear demonstration of the application's features, watch the demonstration
 - **Watson AI Integration**:
   - Revisit IBM Watson integration to expand the application’s AI capabilities.
 
-## Additional Notes
-
-### Limitations:
-
-- The cost of API keys adds financial constraints to the application's scalability.
-- IBM Watson integration was attempted but faced issues, preventing its successful implementation.
-- Currently, the data is limited to Singapore, which restricts its applicability to other regions.
-- Most of the data is hardcoded, reducing flexibility and adaptability.
-- The application's interface is basic and lacks advanced features for user interaction.
-
-### Future Improvements:
-
-- Expand data coverage to include other countries and regions.
-- Enhance the agent's capabilities to be more specialized and context-aware with the data it processes.
-- Resolve issues with Watson integration and explore other robust AI services for additional functionality.
-- Transition from hardcoded data to a more dynamic and scalable data pipeline.
-- Implement a more user-friendly interface with additional features for urban planners.
 
 ## YouTube Link
 
